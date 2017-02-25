@@ -1,0 +1,421 @@
+@charset "utf-8";
+
+$white:#fff;
+$font12:12px;
+
+.menu{
+  color:$white;
+  font-size:$font12;
+}
+
+.box{
+    color:red;
+}
+//变量
+//按钮样式
+$brand-primary : darken(#428bca, 6.5%) !default; // #337ab7
+$btn-primary-color: #fff !default;
+$btn-primary-bg : $brand-primary !default;
+$btn-primary-border : darken($btn-primary-bg, 5%) !default;
+
+/**/
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+$width:200px;
+.box2{
+    width:$width;
+}
+
+
+/*全局变量&局部变量*/
+$color:orange!default;// 声明全局变量
+.block{
+  color:$color;// 调用全局变量
+}
+
+.box5{
+  $color:red;// 声明局部变量
+  a{
+    color:$color;// 调用局部变量
+  }
+}
+
+span{
+  color:$color;
+}
+
+/*选择器嵌套*/
+nav {
+  a {
+    color: red;
+
+    header & {
+      color:green;
+    }
+  }  
+}
+
+/*属性嵌套*/
+.box6 {
+  border: {
+   top: 1px solid red;
+   bottom: 1px solid green;
+  }
+}
+
+/*伪类嵌套*/
+.clearfix{
+  &:before,
+  &:after {
+    content:"";
+    display: table;
+  }
+  &:after {
+    clear:both;
+    overflow: hidden;
+  }
+}
+
+/*混合宏-声明混合宏*/
+@mixin border-radius{
+  -webkit-border-redius:5px;
+  border-redius:5px;
+}
+
+/*带值的参数*/
+@mixin border-radius($radius:5px){
+
+  -webkit-border-radius:$radius;
+  border-radius:$radius;
+}
+
+@mixin box-shadow($shadow...){
+  @if length($shadow) >=1 {
+    @include prefixer(box-shadow, $shadow);
+  }@else{
+    $shadow:0 0 4px rgba(0,0,0,.3);
+    @include prefixer(box-shadow, $shadow);
+  }
+}
+/*调用混合宏*/
+button{
+  @include border-radius;
+}
+
+.box7{
+  @include border-radius(3px);
+}
+
+/*不带值的参数&多个参数*/
+@mixin center($width,$height){
+  width: $width;
+  height: $height;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -($height) / 2;
+  margin-left: -($width) / 2;
+}
+
+.box-center {
+  @include center(500px,300px);
+}
+
+/*复杂的混合宏：带有逻辑关系&参数过多之时，用...代替*/
+@mixin box-shadow($shadows...){
+  @if length($shadows) >= 1 {
+    -webkit-box-shadow: $shadows;
+    box-shadow: $shadows;
+  } @else {
+    $shadows: 0 0 2px rgba(#000,.25);
+    -webkit-box-shadow: $shadow;
+    box-shadow: $shadow;
+  }
+}
+
+.box8 {
+  @include box-shadow(0 0 1px rgba(#000,.5),0 0 2px rgba(#000,.2));
+}
+
+.box9 {
+  @include box-shadow(0 0 2px rgba(#000,.25));
+}
+ 
+/*
+*混合宏
+*优点：复用重复代码块。适合使用情况：代码块中涉及到变量
+*缺点：不能智能的将相同的样式代码块合并在一起。
+
+*继承&占位符：
+*优点：能将相同的样式代码块合并在一起。适合使用情况：代码块不需要传任何变量参数
+*缺点：不能传变量参数
+
+*继承：首先有一个基类存在，调不调用都会产生代码
+*占位符：独立定义，不调用不会产生代码
+*/
+
+/*扩展/继承*/
+ .btn {
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background-color: #f36;
+  color: #fff;
+  @extend .btn;
+}
+
+.btn-second {
+  background-color: orange;
+  color: #fff;
+  @extend .btn;
+}
+
+/* 占位符%placeholder */
+%mt5 {
+  margin-top: 5px;
+}
+%pt5{
+  padding-top: 5px;
+}
+
+.btn2 {
+  @extend %mt5;
+  @extend %pt5;
+}
+
+.block {
+  @extend %mt5;
+
+  span {
+    @extend %pt5;
+  }
+}
+
+// 插值#{}
+$properties: (margin, padding);
+@mixin set-value($side, $value) {
+    @each $prop in $properties {
+        #{$prop}-#{$side}: $value;
+    }
+}
+.login-box {
+    @include set-value(top, 14px);
+}
+
+/*构建一个选择器*/
+@mixin generate-sizes($class, $small, $medium, $big) {
+    .#{$class}-small { font-size: $small; }
+    .#{$class}-medium { font-size: $medium; }
+    .#{$class}-big { font-size: $big; }
+}
+@include generate-sizes("header-text", 12px, 20px, 40px);
+
+/*@extend use of 插值*/
+%updated-status {
+    margin-top: 20px;
+    background: #F00;
+}
+.selected-status {
+    font-weight: bold;
+}
+$flag: "status";
+.navigation {
+    @extend %updated-#{$flag};
+    @extend .selected-#{$flag};
+}
+
+/*sass的运算*/
+/*加法*/
+.box10 {
+  width: 20px + 8in;
+}
+
+/*减法*/
+.box11 {
+  width: 20px - 8in;
+}
+
+/*乘法*/
+$list: twitter,facebook,github,weibo;
+@for $i from 1 through length($list){
+  .icon-#{nth($list,$i)}{
+    background-postion: 0 -20 * $i;
+  }
+}
+
+/*除法*/
+.box12 {
+  width: 100px / 2;  
+}
+
+.box13 {
+  width: (100px / 2);  
+}
+
+.box14 {
+  width: 100px / 2 + 2in;  
+}
+
+/*变量计算*/
+$width: 1000px;
+$nums: 10;
+
+.item {
+  width: $width / 10;  
+}
+
+.list {
+  width: $width / $nums;
+}
+
+p {
+  font: 10px/8px;
+  $width: 1000px;
+  width: $width/2;
+  width: round(1.5)/2;
+  height: (500px/2);
+  margin-left: 5px + 8px/2px;
+}
+
+.box15 {
+  width: (1000px / 100px);
+}
+
+/*数字运算*/
+.box16 {
+  width: ((220px + 720px) - 11 * 20 ) / 12 ;  
+}
+
+/*每列宽度*/
+$col-width: 60px;
+$col-gap: 20px;
+
+@for $i from 1 through 12 {
+    .col-#{$i}{
+        width:$col-width - $col-gap;
+    }
+}
+
+/*颜色运算*/
+p {
+  color: #010203 + #040506;
+  color: #010203 * 2;
+}
+
+/*字符运算*/
+$content: "Hello" + " " + "Sass!";
+.box:before {
+  content: " #{$content} ";
+}
+
+div {
+  cursor: e + -resize;
+}
+
+/*注意引号*/
+p:before {
+  content: "Foo " + Bar;
+  font-family: sans- + "serif";
+}
+
+/******************************进阶篇******************************/
+@mixin blockOrHidden($boolean:true) {
+  @if $boolean {
+      @debug "$boolean is #{$boolean}";
+      display: block;
+    }
+  @else {
+      @debug "$boolean is #{$boolean}";
+      display: none;
+    }
+}
+
+.block {
+  @include blockOrHidden;
+}
+
+.hidden{
+  @include blockOrHidden(false);
+
+}
+/* for循环上篇 */
+/*through*/
+@for $i from 1 through 3 {
+  .item-#{$i} { width: 2em * $i; }
+}
+
+/*to*/
+@for $i from 1 to 3 {
+  .item-#{$i} { width: 2em * $i; }
+}
+
+/* 下篇（through和to输出结果一样） */
+$grid-prefix: span !default;
+$grid-width: 60px !default;
+$grid-gutter: 20px !default;
+
+%grid {
+  float: left;
+  margin-left: $grid-gutter / 2;
+  margin-right: $grid-gutter / 2;
+}
+
+//through
+@for $i from 1 through 12 {
+  .#{$grid-prefix}#{$i}{
+    width: $grid-width * $i + $grid-gutter * ($i - 1);
+    @extend %grid;
+  }  
+}
+
+//to
+@for $i from 1 to 13 {
+  .#{$grid-prefix}#{$i}{
+    width: $grid-width * $i + $grid-gutter * ($i - 1);
+    @extend %grid;
+  }  
+}
+
+/*while循环*/
+$types: 4;
+$type-width: 20px;
+
+@while $types > 0 {
+    .while-#{$types} {
+        width: $type-width + $types;
+    }
+    $types: $types - 1;
+}
+
+/* @each 循环指令的形式：@each $var in <list> */
+$list: adam john wynn mason kuroir;//$list 就是一个列表
+
+@mixin author-images {
+    @each $author in $list {
+        .photo-#{$author} {
+            background: url("/images/avatars/#{$author}.png") no-repeat;
+        }
+    }
+}
+
+.author-bio {
+    @include author-images;
+}

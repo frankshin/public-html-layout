@@ -1,0 +1,42 @@
+.content_oneadv{width:1100px;margin:auto;margin-top:40px;margin-bottom:150px;}
+.nav_left{width:160px;float:left;border: 1px solid #ddd;}
+.nav_left li{width:100%;height:65px;line-height:65px;text-align:center;font-size:16px;color:#999999;border-bottom: 1px solid #ddd;
+cursor:pointer;}
+.nav_left li:hover{background: #F26355;color:white;}
+.nav_left li.active{background: #F26355;color:white;}
+.nav_right{width:900px;float:left;margin-left:38px;}
+.nav_right .rig_con{display:none;}
+.nav_right .rig_con:first-child{display:block;}
+.nav_right .rig_con .tit{font-size: 20px;color: #414141;line-height: 30px;margin-bottom:20px;
+height:30px;}
+.nav_right .rig_con p{font-size: 14px;color: #414141;line-height: 40px;}
+.nav_right .rig_con .qust{font-size: 16px;color: #F26355;line-height: 40px;}
+.nav_right .rig_con .onelc ul{height:110px;border: 1px solid #DDDDDD;}
+.nav_right .rig_con .onelc ul li{float:left;height:100%;}
+.nav_right .rig_con .onelc ul .one{width:115px;font-size: 20px;color: #414141;line-height:110px;text-align:center;}
+.nav_right .rig_con .onelc ul .two{width:645px;}
+.nav_right .rig_con .onelc ul .two .titl{font-size: 18px;color: #F26355;line-height: 36px;margin-top:10px;}
+.nav_right .rig_con .onelc ul .two .con{font-size: 14px;color: #414141;line-height: 22px;}
+.nav_right .rig_con .onelc ul .three{width:130px;}
+.nav_right .rig_con .onelc ul .three img{width:60px;height:60px;margin-top: 25px;margin-left: 35px;}
+.nav_right .rig_con .tf{font-size: 14px;color: #0996EA;line-height: 40px;}
+.nav_right .rig_con .onelc .jt{width: 100%;text-align: center;margin-top: -2px;margin-bottom:25px;}
+.nav_right .rig_con .onelc .jt img{width:60px;display: block;margin: auto;background-color:white;}
+
+
+.banner_btn {
+    width: 160px;
+    height: 40px;
+    background-color: #f26355;
+    line-height: 38px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    z-index: 100;
+    position: absolute;
+    left: 50%;
+    margin-left: -80px;
+    bottom: 55px;
+}
+.banner_btn:hover{color: #fff;opacity:0.8;}

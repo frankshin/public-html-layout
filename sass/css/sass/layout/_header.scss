@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+@import "utils/_variables.scss";
+@import "utils/_mixins.scss";
+@import "utils/_placeholders.scss";
+
+// 占位符
+%main-width{
+	width:1100px;
+}
+
+#header{
+	width:100%;
+	height:122px;
+}
+.top-bar{
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid #ddd;
+	.top-box{
+		width:1100px;
+		line-height:40px;
+		margin:0 auto;
+		.hotline{
+			float:left;
+			a{
+				text-align:left;
+				float:left;
+				display:block;
+				padding-right:20px;
+				img{
+					width:20px;
+					height:20px;
+					float:left;
+					margin-right:5px;
+					margin-top:10px;
+				}
+			}
+		}
+		.login{
+			float:right;
+			a{
+				float: left;
+				text-align: center;
+			}
+			a.register_btn{
+				margin-right:30px;
+			}
+			a.login_btn{
+				span{
+					width: 70px;
+					height: 26px;
+					background-color: #f26355;
+					display: block;
+					margin-top: 6px;
+					line-height: 26px;
+					text-align: center;
+					color: #fff;
+					cursor: pointer;
+				}
+				span:hover{
+					background-color: #ea554e;
+				}
+			}
+		}
+	}
+}
+.nav-posi{
+	position:fixed;
+	top:0;
+}
+
+
+.nav-bar{
+	width:100%;
+	background:#fff;
+	z-index:999;
+	border-bottom: 1px solid #ddd;
+	.nav-box{
+		height:80px;
+		@extend %main-width;
+		@extend %m0;
+		.logo{
+			float:left;
+			img{
+				height:39px;
+				margin-top:24px;
+				@extend .logo;
+			}
+			.slogan{
+				@extend .logo;
+				border-left:1px solid #888;
+				padding-left:10px;
+				margin-left:10px;
+				margin-top:24px;
+				font-size:16px;
+				line-height:20px;
+				color:#888;
+			}
+		}
+		.nav{
+			//width:656px;
+			width:669px;
+			height:56px;
+			float:right;
+			margin-top:10px;
+			line-height:56px;
+			position:relative;
+			.navigation {
+				list-style: none;
+				margin: 0; 
+				
+				// background:#FCC;
+
+				display: -webkit-box;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+
+				-webkit-flex-flow: row wrap;
+				justify-content: flex-end;
+				display:inline-block;
+				li{
+					padding:0 18px;
+					float:left;
+					text-align:center;
+					a {
+						text-decoration: none;
+						display: block;
+						color: $font-primary-color;
+						font-size:16px;
+					}
+					a:hover {
+						color:$brand-primary;
+					}
+				}
+			}
+			
+		}
+	}
+}
+.curBg {
+	background:#F00;
+	height:2px;
+	position:absolute;
+	bottom:0;
+	width:32px;
+	left:0px;
+}

@@ -1,0 +1,1927 @@
+@charset "UTF-8";
+/*!
+ * http://www.fudaojun.com/
+ * Copyright © 2016 fudaojun
+ * Author:zxyang@wisezone.org
+ * Update:Tue Dec 13 2016 14:14:12 GMT+0800 (中国标准时间)
+ */
+/* 公共样式 */
+html, body, div, ol, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, input, button, textarea, p, span, table, th, td, form {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font: 14px ".PingFangSC-Light", "Microsoft Yahei", Arial, Helvetica, sans-serif, "宋体";
+  color: #444;
+  line-height: 24px;
+  min-width: 1100px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+}
+
+html, body {
+  min-height: 100%;
+  font-size: 14px;
+}
+
+div, a, img, input, button {
+  border: none;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+em, cite, i {
+  font-style: normal;
+}
+
+label {
+  cursor: pointer;
+}
+
+input[type="button"], input[type="submit"], input[type="reset"], button {
+  -webkit-appearance: none;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+textarea {
+  overflow: hidden;
+  resize: none;
+}
+
+.clearfix:before {
+  content: "";
+  display: table;
+  box-sizing: border-box;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  box-sizing: border-box;
+}
+
+.clear {
+  clear: both;
+}
+
+a {
+  color: #444;
+  outline: medium none;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f26355;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+.font-left {
+  text-align: left;
+}
+
+.font-right {
+  text-align: right;
+}
+
+.font-center {
+  text-align: center;
+}
+
+body, .nav-bar .nav-box {
+  margin: 0 auto;
+}
+
+.nav-bar .nav-box {
+  width: 1100px;
+}
+
+#header {
+  width: 100%;
+  height: 122px;
+}
+
+.top-bar {
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #ddd;
+}
+.top-bar .top-box {
+  width: 1100px;
+  line-height: 40px;
+  margin: 0 auto;
+}
+.top-bar .top-box .hotline {
+  float: left;
+}
+.top-bar .top-box .hotline a {
+  text-align: left;
+  float: left;
+  display: block;
+  padding-right: 20px;
+}
+.top-bar .top-box .hotline a img {
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+.top-bar .top-box .login {
+  float: right;
+}
+.top-bar .top-box .login a {
+  float: left;
+  text-align: center;
+}
+.top-bar .top-box .login a.register_btn {
+  margin-right: 30px;
+}
+.top-bar .top-box .login a.login_btn span {
+  width: 70px;
+  height: 26px;
+  background-color: #f26355;
+  display: block;
+  margin-top: 6px;
+  line-height: 26px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+.top-bar .top-box .login a.login_btn span:hover {
+  background-color: #ea554e;
+}
+
+.nav-posi {
+  position: fixed;
+  top: 0;
+}
+
+.nav-bar {
+  width: 100%;
+  background: #fff;
+  z-index: 999;
+  border-bottom: 1px solid #ddd;
+}
+.nav-bar .nav-box {
+  height: 80px;
+}
+.nav-bar .nav-box .logo, .nav-bar .nav-box .logo img, .nav-bar .nav-box .logo .slogan {
+  float: left;
+}
+.nav-bar .nav-box .logo img, .nav-bar .nav-box .logo .slogan img {
+  height: 39px;
+  margin-top: 24px;
+}
+.nav-bar .nav-box .logo .slogan {
+  border-left: 1px solid #888;
+  padding-left: 10px;
+  margin-left: 10px;
+  margin-top: 24px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #888;
+}
+.nav-bar .nav-box .nav {
+  width: 669px;
+  height: 56px;
+  float: right;
+  margin-top: 10px;
+  line-height: 56px;
+  position: relative;
+}
+.nav-bar .nav-box .nav .navigation {
+  list-style: none;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+  display: inline-block;
+}
+.nav-bar .nav-box .nav .navigation li {
+  padding: 0 18px;
+  float: left;
+  text-align: center;
+}
+.nav-bar .nav-box .nav .navigation li a {
+  text-decoration: none;
+  display: block;
+  color: #444;
+  font-size: 16px;
+}
+.nav-bar .nav-box .nav .navigation li a:hover {
+  color: #f26355;
+}
+
+.curBg {
+  background: #F00;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  width: 32px;
+  left: 0px;
+}
+
+.banner-wrapper {
+  position: relative;
+}
+
+.banner {
+  width: 100%;
+  min-width: 1100px;
+  height: 500px;
+  overflow: auto;
+  position: relative;
+}
+
+.inner {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.banner_word {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -550px;
+}
+
+.inner img {
+  float: left;
+}
+
+.unslider-nav {
+  position: absolute;
+  left: 50%;
+  margin-left: -124px;
+  bottom: 20px;
+  z-index: 100;
+}
+
+.banner_word .banner_btn {
+  width: 160px;
+  height: 40px;
+  background-color: #f26355;
+  line-height: 38px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  z-index: 100;
+}
+
+.banner_word .banner_btn:hover {
+  background-color: #ea554e;
+}
+
+.banner_word .banner_btn3 {
+  position: absolute;
+  left: 380px;
+  top: 420px;
+}
+
+.banner_word .hanjia_banner {
+  background: #fff;
+  color: #f26355;
+  overflow: hidden;
+  animation: hanjia_banner .5s infinite;
+  -webkit-animation: hanjia_banner .5s infinite;
+  /*Safari and Chrome*/
+}
+
+.banner_word .hanjia_banner:hover {
+  background: #FCEF9C;
+  color: #f26355;
+}
+
+.banner_word .t_1 {
+  width: 1100px;
+  font-size: 60px;
+  color: #FCEF9C;
+  margin-top: 75px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+.banner_word .t_2 {
+  width: 1100px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+@keyframes hanjia_banner {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+@-webkit-keyframes hanjia_banner /*Safari and Chrome*/ {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+.banner_word .activity_rule {
+  position: absolute;
+  right: 60px;
+  top: 341px;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.banner_word .activity_rule_box {
+  position: absolute;
+  right: 160px;
+  top: 170px;
+  width: 240px;
+  height: 280px;
+  background: #000;
+  filter: alpha(opacity=70);
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+  border-radius: 8px;
+  padding: 20px;
+  z-index: 101;
+  display: none;
+}
+
+.banner_word .activity_rule_box .close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.banner_word .activity_rule_box h5 {
+  font-size: 16px;
+  color: #FEE147;
+}
+
+.banner_word .activity_rule_detail {
+  padding: 0 15px;
+}
+
+.banner_word .activity_rule_detail li {
+  width: 100%;
+  float: left;
+  color: #fff;
+  list-style: disc;
+  margin-top: 10px;
+  line-height: 20px;
+}
+
+.banner_word .banner_text {
+  width: 1100px;
+  height: 500px;
+  display: block;
+  text-indent: -10000em;
+}
+
+.unslider-nav ol {
+  list-style: none;
+  text-align: center;
+}
+
+.unslider-nav ol li {
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+  background: #ffffff;
+  margin: 0 6px;
+  float: left;
+  overflow: hidden;
+  text-indent: -999em;
+  cursor: pointer;
+}
+
+.unslider-nav ol li.unslider-active {
+  background: red;
+  cursor: default;
+}
+
+.unslider {
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.unslider-wrap {
+  position: relative;
+}
+
+.unslider-wrap.unslider-carousel li {
+  float: left;
+}
+
+.unslider-arrow {
+  position: absolute;
+  top: 225px;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: none;
+}
+
+.unslider-arrow.next {
+  right: 150px;
+}
+
+.unslider-arrow.prev {
+  left: 150px;
+}
+
+.unslider-arrow:hover {
+  opacity: 0.8;
+}
+
+/*layout*/
+.part {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.grey {
+  background: #F9F9FB;
+}
+
+.part_con {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 36px;
+  padding-top: 90px;
+  color: #414141;
+  line-height: 36px;
+  text-align: center;
+}
+h1 span {
+  color: #f26355;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 30px;
+  padding-top: 90px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #999999;
+  line-height: 30px;
+  margin-top: 6px;
+  word-space: 8px;
+  letter-spacing: 0.5px;
+}
+
+h4 {
+  font-size: 22px;
+  color: #444;
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+
+.mfzx_btn {
+  width: 160px;
+  height: 40px;
+  border: 2px solid #f26355;
+  color: #f26355;
+  text-align: center;
+  font-size: 18px;
+  background: none;
+  font-family: ".PingFangSC-Light","Microsoft Yahei",Arial, Helvetica, sans-serif,"宋体";
+}
+
+.mfzx_btn:hover {
+  color: #fff;
+  background: #f26355;
+}
+
+.more_btn {
+  width: 160px;
+  height: 36px;
+  border: 2px solid #999;
+  color: #666;
+  text-align: center;
+  font-size: 18px;
+  background: none;
+  line-height: 36px;
+}
+
+.more_btn:hover {
+  color: #fff;
+  background: #f26355;
+  border: 2px solid #f26355;
+}
+
+/*part1*/
+.advantage {
+  height: 570px;
+}
+.advantage ul {
+  margin-top: 100px;
+}
+.advantage ul li {
+  width: 230px;
+  height: 245px;
+  float: left;
+  margin-right: 60px;
+  text-align: left;
+  color: #999;
+  line-height: 20px;
+}
+.advantage ul li .pic {
+  width: 230px;
+  height: 150px;
+  overflow: hidden;
+}
+.advantage ul li .pic img {
+  width: 230px;
+}
+.advantage ul li .pic img:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all 1s ease 0s;
+  -moz-transition: all 1s ease 0s;
+  -ms-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+
+/*part2*/
+.teachers {
+  height: 609px;
+  background: url(../../images/fudaojun_teachers.png) no-repeat center center;
+  position: relative;
+}
+.teachers ul {
+  float: right;
+}
+.teachers ul li {
+  width: 98px;
+  height: 60px;
+  float: right;
+  margin-left: 36px;
+  border: 1px solid #444;
+  text-align: center;
+  position: relative;
+}
+.teachers ul li img {
+  margin-top: 12px;
+  width: 36px;
+}
+.teachers ul li span {
+  width: 84px;
+  height: 38px;
+  display: block;
+  background: #F9F9FB;
+  font-size: 12px;
+  line-height: 18px;
+  position: absolute;
+  left: 7px;
+  top: 52px;
+}
+.teachers .mfzx_btn {
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+}
+.teachers .more_btn {
+  position: absolute;
+  right: 213px;
+  bottom: 60px;
+}
+
+/*part3*/
+.versus {
+  height: 770px;
+  background: url(../../images/fudaojun_versus.png) no-repeat center center;
+  position: relative;
+}
+.versus .left, .versus .right {
+  width: 264px;
+  height: 320px;
+  margin-top: 100px;
+  padding-top: 10px;
+}
+.versus .left .title, .versus .right .title {
+  height: 50px;
+  font-size: 30px;
+  font-weight: 500;
+}
+.versus .left li, .versus .right li {
+  width: 264px;
+  height: 44px;
+  margin-top: 40px;
+  font-size: 20px;
+}
+.versus .left li span, .versus .right li span {
+  font-size: 14px;
+  display: block;
+}
+.versus .left {
+  float: left;
+}
+.versus .left .title {
+  text-align: right;
+  background: url(../../images/fudaojun_versus_line1.png) no-repeat right bottom;
+  color: #666;
+}
+.versus .left li {
+  text-align: right;
+  color: #666;
+}
+.versus .left li span {
+  color: #999;
+}
+.versus .right {
+  float: right;
+}
+.versus .right .title {
+  text-align: left;
+  background: url(../../images/fudaojun_versus_line2.png) no-repeat left bottom;
+  position: relative;
+  color: #f26355;
+}
+.versus .right .title img {
+  position: absolute;
+  left: 100px;
+  bottom: 32px;
+}
+.versus .right li {
+  text-align: left;
+  color: #f26355;
+}
+.versus .right li span {
+  color: #444;
+}
+.versus .mfzx_btn {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/*part4*/
+.operate {
+  height: 846px;
+  background: url(../../images/fudaojun_operate.png) no-repeat center center;
+  position: relative;
+}
+.operate .parent, .operate .teacher, .operate .student, .operate .center_red {
+  position: absolute;
+  line-height: 20px;
+}
+.operate .parent {
+  left: 633px;
+  top: 270px;
+  text-align: right;
+}
+.operate .teacher {
+  left: 203px;
+  top: 498px;
+  text-align: right;
+}
+.operate .student {
+  right: 106px;
+  top: 440px;
+  text-align: left;
+}
+.operate .center_red {
+  color: #999;
+  font-size: 16px;
+  line-height: 26px;
+  right: 470px;
+  top: 530px;
+}
+.operate .mfzx_btn {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/*part5*/
+.nine {
+  height: 846px;
+  position: relative;
+}
+.nine .tab {
+  width: 194px;
+  height: 60px;
+  margin-top: 10px;
+  display: inline-block;
+}
+.nine .tab a {
+  width: 80px;
+  margin-right: 34px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 16px;
+  color: #666;
+  display: block;
+  float: left;
+}
+.nine .tab a.current {
+  border-bottom: 2px solid #f26355;
+}
+.nine .tab a:hover {
+  color: #f26355;
+}
+.nine ul {
+  margin-top: 90px;
+}
+.nine ul li {
+  width: 320px;
+  height: 330px;
+  background: #F9F9FB;
+  float: left;
+  margin-left: 70px;
+  position: relative;
+}
+.nine ul li p {
+  line-height: 28px;
+  padding-top: 6px;
+}
+.nine ul li p a {
+  color: #999;
+}
+.nine ul li p a:hover {
+  color: #f26355;
+}
+.nine ul li .zxxq_btn {
+  width: 100px;
+  height: 30px;
+  background: #f26355;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  line-height: 30px;
+  display: block;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  margin-left: -50px;
+}
+.nine ul li .zxxq_btn:hover {
+  color: #fff;
+  background: #ea554e;
+}
+.nine ul li .auto_icon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url("../../images/audio_zz.png") no-repeat center;
+  background-size: 50px 50px;
+  cursor: pointer;
+}
+.nine ul li .auto_icon:hover {
+  opacity: 0.5;
+}
+.nine ul li .bgfc {
+  filter: alpha(opacity=50);
+}
+.nine .junior {
+  display: none;
+}
+.nine .mfzx_btn {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  margin-left: 30px;
+}
+.nine .more_btn {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  margin-left: -190px;
+}
+
+/*part6*/
+.evaluate {
+  height: 904px;
+  background: url(../../images/fudaojun_evaluate_bg.png) no-repeat center center;
+  position: relative;
+}
+.evaluate #jswbox {
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.evaluate #jswbox .evaluate_arrow {
+  position: absolute;
+  top: 300px;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+.evaluate #jswbox .evaluate_arrow.next {
+  right: 0;
+}
+.evaluate #jswbox .evaluate_arrow.prev {
+  left: 0;
+}
+.evaluate #jswbox .evaluate_arrow:hover {
+  opacity: 0.8;
+}
+.evaluate #jswbox ul {
+  position: relative;
+  height: 600px;
+  width: 630px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.evaluate #jswbox ul li {
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: 0;
+  cursor: pointer;
+  overflow: hidden;
+  top: 152px;
+  left: 10px;
+}
+.evaluate #jswbox ul li img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  float: left;
+}
+.evaluate .mfzx_btn {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/*part7*/
+.step {
+  height: 640px;
+  position: relative;
+}
+.step .step_3 {
+  margin-top: 100px;
+}
+.step .step_3 ul {
+  padding: 10px 99px 0 86px;
+}
+.step .step_3 ul li {
+  width: 305px;
+  float: left;
+  font-size: 20px;
+  color: #666;
+}
+.step .step_3 ul li .figure {
+  margin-bottom: 8px;
+}
+.step .step_3 ul li .under {
+  color: #999;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.step .mfzx_btn {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/*part8*/
+.honor {
+  height: 600px;
+}
+.honor ul {
+  margin-top: 100px;
+}
+.honor ul li {
+  width: 350px;
+  height: 330px;
+  float: left;
+  margin-right: 25px;
+  text-align: left;
+  line-height: 18px;
+}
+.honor ul li .pic {
+  width: 350px;
+  height: 240px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.honor ul li .pic img {
+  width: 350px;
+}
+.honor ul li .pic img:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all 1s ease 0s;
+  -moz-transition: all 1s ease 0s;
+  -ms-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+.honor ul li .date {
+  color: #999;
+  margin-top: 6px;
+}
+
+/*part9*/
+.media {
+  height: 505px;
+}
+.media p {
+  font-size: 20px;
+  color: #666;
+  margin-top: 35px;
+  line-height: 36px;
+}
+.media ul {
+  margin-top: 74px;
+}
+.media ul li {
+  float: left;
+  width: 150px;
+  height: 70px;
+  margin-right: 8px;
+}
+.media ul li img {
+  width: 150px;
+}
+.media ul li:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/**/
+.bottom_red {
+  height: 100px;
+  background: #f26355;
+}
+.bottom_red ul {
+  overflow: hidden;
+}
+.bottom_red ul li {
+  float: left;
+  height: 74px;
+  padding: 23px 58px 0 60px;
+  display: inline;
+  color: #fff;
+  line-height: 24px;
+  background: url(../../images/fudaojun_bottom_red.png) no-repeat center center;
+}
+.bottom_red ul li h5 {
+  font-size: 18px;
+  color: #fff;
+  line-height: 30px;
+}
+.bottom_red ul li.al-1 {
+  background-position: -10px top;
+}
+.bottom_red ul li.al-2 {
+  background-position: -10px -80px;
+}
+.bottom_red ul li.al-3 {
+  background-position: -10px -160px;
+}
+.bottom_red ul li.al-4 {
+  background-position: -10px -240px;
+}
+.bottom_red ul li.al-5 {
+  background-position: -10px -320px;
+}
+
+@-webkit-keyframes fadeInstep1 {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-10%, 0, 0);
+    transform: translate3d(-10%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInstep1 {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-10%, 0, 0);
+    transform: translate3d(-10%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.animated.step1 .step1_1, .animated.step1 .step1_2 {
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInstep1;
+  animation-name: fadeInstep1;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.animated.step1 .step1_2 {
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+}
+
+/**********************************************************************************/
+@-webkit-keyframes fadeInstep2 {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(10%, 0, 0);
+    transform: translate3d(10%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInstep2 {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(10%, 0, 0);
+    transform: translate3d(10%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.animated.step2 .step2_1, .animated.step2 .step2_2, .animated.step2 .step2_3 {
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInstep2;
+  animation-name: fadeInstep2;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.animated.step2 .step2_2 {
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+}
+.animated.step2 .step2_3 {
+  -webkit-animation-delay: .6s;
+  animation-delay: .6s;
+}
+
+/**********************************************************************************/
+@-webkit-keyframes fadeInstep3 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes fadeInstep3 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+.animated.step3 {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-name: fadeInstep3;
+  animation-name: fadeInstep3;
+}
+
+/**********************************************************************************/
+@-webkit-keyframes fadeInstep4 {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-10%, 0, 0);
+    transform: translate3d(-10%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInstep4 {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-10%, 0, 0);
+    transform: translate3d(-10%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.animated.step4 .step4_1, .animated.step4 .step4_2, .animated.step4 .step4_3 {
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInstep4;
+  animation-name: fadeInstep4;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.animated.step4 .step4_2 {
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+}
+.animated.step4 .step4_3 {
+  -webkit-animation-delay: .6s;
+  animation-delay: .6s;
+}
+
+/**********************************************************************************/
+@-webkit-keyframes fadeInstep5 {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInstep5 {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.animated.step5 .step5_1, .animated.step5 .step5_2 {
+  webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInstep5;
+  animation-name: fadeInstep5;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.animated.step5 .step5_2 {
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+}
+
+/**********************************************************************************/
+/**/
+.apply {
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 500;
+}
+.apply .apply_bg {
+  width: 100%;
+  height: 50px;
+  background: #000;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.apply .apply_box {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+.apply .apply_box img {
+  float: left;
+  margin-top: -52px;
+}
+.apply .apply_box .form_group {
+  width: 760px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+.apply .apply_box .form_group .apply_input {
+  width: 148px;
+  height: 30px;
+  *height: 26px;
+  margin-right: 20px;
+  border: none;
+  padding-left: 12px;
+  float: left;
+}
+.apply .apply_box .form_group .apply_select {
+  width: 120px;
+  height: 30px;
+  margin-right: 20px;
+  border: none;
+  padding-left: 8px;
+  float: left;
+}
+.apply .apply_box .form_group .apply_btn {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  background: #f26355;
+  text-align: center;
+  line-height: 28px;
+  position: absolute;
+  right: 0;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #aaa;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #aaa;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #aaa;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #aaa;
+}
+
+#footer {
+  width: 100%;
+  height: 160px;
+  background: #414141;
+  color: #999;
+  padding-top: 40px;
+}
+#footer a {
+  color: #999;
+}
+#footer a:hover {
+  color: #fff;
+}
+#footer .foot_nav {
+  width: 470px;
+  height: 17px;
+}
+#footer .foot_nav li {
+  float: left;
+  padding: 0 18px;
+  height: 17px;
+  line-height: 13px;
+  border-right: #979797 1px solid;
+}
+#footer .fudaojun_foot_tel {
+  font-size: 20px;
+  color: #999;
+  margin-top: 20px;
+}
+#footer .fudaojun_foot_tel img {
+  width: 30px;
+  float: left;
+  margin-right: 20px;
+}
+#footer p {
+  margin-top: 22px;
+}
+#footer .wechat {
+  width: 248px;
+  height: 140px;
+  float: right;
+  margin-top: -138px;
+}
+#footer .wechat ul li {
+  width: 109px;
+  height: 140px;
+  float: left;
+  margin-right: 30px;
+  text-align: center;
+}
+#footer .wechat ul li img {
+  width: 100px;
+}
+#footer .wechat ul li span {
+  width: 100%;
+  float: left;
+  line-height: 24px;
+  font-size: 12px;
+}
+
+.subpage_banner {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.subpage_banner .word {
+  z-index: 100;
+}
+.subpage_banner .word .word_bg {
+  width: 500px;
+  height: 110px;
+  background: #000;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  padding: 10px 0;
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  margin-left: -250px;
+  z-index: 101;
+}
+.subpage_banner .word p {
+  font-size: 34px;
+  text-align: center;
+  color: #fff;
+  line-height: 1.6;
+  width: 500px;
+  position: absolute;
+  top: 98px;
+  left: 50%;
+  margin-left: -250px;
+  z-index: 102;
+}
+.subpage_banner .im-cent {
+  position: absolute;
+  left: 50%;
+  margin-left: -960px;
+  top: 0px;
+}
+
+.apsc {
+  height: 651px;
+  position: relative;
+}
+.apsc ul {
+  margin-top: 115px;
+}
+.apsc ul li {
+  width: 250px;
+  height: 240px;
+  float: left;
+  margin-right: 33px;
+  background: #fff;
+  box-shadow: 0 2px 6px 0 rgba(200, 200, 214, 0.1);
+  position: relative;
+}
+.apsc ul li i {
+  width: 78px;
+  height: 78px;
+  display: block;
+  background: url(../../images/fudaojun_apsc.png) no-repeat center;
+  font-size: 30px;
+  color: #fff;
+  font-family: Arial;
+  text-align: center;
+  line-height: 74px;
+  position: absolute;
+  left: 50%;
+  margin-left: -35px;
+  top: -35px;
+}
+.apsc ul li .details {
+  margin-top: 55px;
+}
+.apsc ul li .details span {
+  width: 100px;
+  height: 21px;
+  display: block;
+  border-top: 2px solid #ddd;
+  font-size: 16px;
+  color: #999999;
+  line-height: 16px;
+  margin-left: 75px;
+  *margin-left: 0;
+  line-height: 21px;
+  margin-bottom: 10px;
+}
+.apsc ul li .details p {
+  color: #666666;
+}
+.apsc ul li:hover i {
+  background: url(../../images/fudaojun_apsc_hover.png) no-repeat center;
+}
+.apsc ul li:hover h4 {
+  color: #f26355;
+}
+.apsc .zixun_btn {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.course {
+  height: 1270px;
+  position: relative;
+}
+.course .course_tab {
+  width: 194px;
+  height: 60px;
+  margin-top: 10px;
+  display: inline-block;
+}
+.course .course_tab a {
+  width: 80px;
+  margin-right: 34px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 16px;
+  color: #666;
+  display: block;
+  float: left;
+}
+.course .course_tab a.current {
+  border-bottom: 2px solid #f26355;
+}
+.course .course_tab a:hover {
+  color: #f26355;
+}
+.course .course_senior, .course .course_junior {
+  margin-top: 40px;
+}
+.course .course_senior p, .course .course_junior p {
+  color: #999;
+  margin-bottom: 80px;
+}
+.course .course_senior .panel, .course .course_junior .panel {
+  width: 100%;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 40px;
+}
+.course .course_senior .panel .x_panel, .course .course_junior .panel .x_panel {
+  height: 24px;
+  padding-left: 20px;
+  border-left: 6px solid #f26355;
+  font-size: 24px;
+  line-height: 20px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+.course .course_senior .panel .x_content, .course .course_junior .panel .x_content {
+  text-align: left;
+  font-size: 16px;
+}
+.course .course_senior .panel .x_content div, .course .course_junior .panel .x_content div {
+  width: 100%;
+  height: 24px;
+  margin-bottom: 25px;
+}
+.course .course_senior .panel .x_content h4, .course .course_junior .panel .x_content h4 {
+  float: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+.course .course_senior .panel .x_content ul li, .course .course_junior .panel .x_content ul li {
+  float: left;
+  margin-right: 10px;
+  width: 55px;
+  height: 24px;
+  background: url(../../images/fudaojun_course_tag.png) no-repeat center;
+  text-align: center;
+  line-height: 22px;
+}
+.course .course_senior .panel .x_content p, .course .course_junior .panel .x_content p {
+  color: #444;
+}
+.course .zixun_btn {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.teaching_service {
+  height: 863px;
+  background: url("../../images/classdingzhi.png") no-repeat center;
+  position: relative;
+  background-size: 100% auto;
+}
+.teaching_service ul {
+  padding: 0 40px;
+  margin-top: 220px;
+}
+.teaching_service ul li {
+  width: 130px;
+  height: 24px;
+  float: left;
+  margin-right: 163px;
+  margin-bottom: 195px;
+  font-size: 20px;
+  color: #666;
+  text-align: center;
+}
+.teaching_service p {
+  font-size: 20px;
+  color: #F26355;
+  margin-top: 48px;
+}
+.teaching_service .zixun_btn {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  margin-left: -80px;
+}
+.teaching_service .duihua3 {
+  position: absolute;
+  top: 529px;
+  left: -12px;
+  width: 160px;
+  height: 150px;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.teaching_service .duihua1 {
+  position: absolute;
+  top: 237px;
+  left: 562px;
+  width: 160px;
+  height: 150px;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.teaching_service .duihua2 {
+  position: absolute;
+  top: 559px;
+  right: 93px;
+  width: 90px;
+  height: 100px;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.teaching_service .duihua4 {
+  font-size: 18px;
+  color: #F26355;
+  line-height: 26px;
+  position: absolute;
+  top: 420px;
+  right: 208px;
+}
+
+.dif_point {
+  height: 998px;
+  position: relative;
+}
+.dif_point .point_tab {
+  width: 194px;
+  height: 60px;
+  margin-top: 10px;
+  display: inline-block;
+}
+.dif_point .point_tab a {
+  width: 80px;
+  margin-right: 34px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 16px;
+  color: #666;
+  display: block;
+  float: left;
+}
+.dif_point .point_tab a.current {
+  border-bottom: 2px solid #f26355;
+}
+.dif_point .point_tab a:hover {
+  color: #f26355;
+}
+.dif_point ul li {
+  width: 160px;
+  height: 215px;
+  float: left;
+  margin-right: 75px;
+  margin-top: 85px;
+}
+.dif_point ul li img {
+  width: 60px;
+}
+.dif_point ul li h4 {
+  margin-top: 8px;
+  margin-bottom: 14px;
+}
+.dif_point ul li p {
+  color: #999;
+  line-height: 20px;
+}
+.dif_point .zixun_btn {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.subpage_banner .word2 {
+  font-size: 40px;
+  line-height: 70px;
+  width: 420px;
+  height: 300px;
+  position: absolute;
+  top: 90px;
+  left: 60px;
+}
+.subpage_banner .word2 span {
+  color: #f26355;
+}
+.subpage_banner .word2 .teac_btn {
+  margin-top: 50px;
+}
+
+.teachers_our {
+  height: 440px;
+}
+.teachers_our ul {
+  margin-top: 82px;
+}
+.teachers_our ul li {
+  width: 222px;
+  height: 118px;
+  float: left;
+  margin-right: 70px;
+}
+.teachers_our ul li .t_figure {
+  font-size: 64px;
+  color: #f26355;
+  font-family: arial;
+  line-height: 64px;
+  margin-bottom: 25px;
+}
+.teachers_our ul li .t_word {
+  font-size: 23px;
+}
+
+.teachers_advantage {
+  height: 562px;
+  position: relative;
+}
+.teachers_advantage ul {
+  margin-top: 60px;
+}
+.teachers_advantage ul li {
+  width: 160px;
+  height: 190px;
+  float: left;
+  margin-right: 75px;
+}
+.teachers_advantage ul li img {
+  width: 80px;
+}
+.teachers_advantage ul li h4 {
+  margin-top: 10px;
+  font-size: 19px;
+}
+.teachers_advantage ul li p {
+  color: #999;
+  line-height: 20px;
+  text-align: left;
+}
+.teachers_advantage .zixun_btn {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.teachers_filtrate {
+  height: 906px;
+  background: url(../../images/fudaojun_teachers_filtrate_bg.png) no-repeat center bottom;
+  position: relative;
+}
+.teachers_filtrate ul {
+  margin-top: 108px;
+}
+.teachers_filtrate ul li {
+  width: 100%;
+  font-size: 20px;
+}
+.teachers_filtrate ul li:nth-child(odd) {
+  color: #fff;
+  margin-bottom: 26px;
+}
+.teachers_filtrate ul li:nth-child(even) {
+  margin-bottom: 36px;
+}
+.teachers_filtrate ul li.odd {
+  color: #fff;
+  margin-bottom: 26px;
+  *margin-bottom: 23px;
+}
+.teachers_filtrate ul li.even {
+  margin-bottom: 36px;
+  *margin-bottom: 33px;
+}
+.teachers_filtrate .zixun_btn {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.teachers_list {
+  height: 1760px;
+  position: relative;
+  margin-bottom: 40px;
+}
+.teachers_list .panel {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.teachers_list .panel .x_panel {
+  height: 24px;
+  padding-left: 20px;
+  border-left: 6px solid #f26355;
+  font-size: 24px;
+  line-height: 20px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+.teachers_list .panel .x_content {
+  height: 425px;
+}
+.teachers_list .panel .x_content ul li {
+  width: 300px;
+  height: 380px;
+  float: left;
+  margin-right: 100px;
+  text-align: center;
+  box-shadow: 0 2px 6px 0 rgba(242, 99, 85, 0.1);
+  overflow: hidden;
+}
+.teachers_list .panel .x_content ul li img {
+  width: 100%;
+  vertical-align: bottom;
+}
+.teachers_list .panel .x_content ul li .list_image {
+  border-bottom: 4px solid #f26255;
+  transition: 0.4s;
+  height: 278px;
+  width: 100%;
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+}
+.teachers_list .panel .x_content ul li .list_image img {
+  width: 100%;
+  vertical-align: bottom;
+}
+.teachers_list .panel .x_content ul li .list_info {
+  transition: 0.4s;
+}
+.teachers_list .panel .x_content ul li .college {
+  padding-top: 18px;
+  font-size: 24px;
+}
+.teachers_list .panel .x_content ul li .name {
+  font-size: 18px;
+  color: #666;
+  margin-top: 16px;
+}
+.teachers_list .panel .x_content ul li .goodAt {
+  color: #f26355;
+  margin-top: 24px;
+  margin-bottom: 22px;
+}
+.teachers_list .panel .x_content ul li p {
+  line-height: 20px;
+  color: #666;
+  text-align: left;
+  padding-left: 17px;
+  margin-bottom: 24px;
+}
+.teachers_list .panel .x_content ul li .list_touch {
+  background-color: #f26355;
+  color: #fff;
+  float: left;
+  overflow: hidden;
+  padding: 10px 20px;
+  width: 100%;
+  transition: 0.4s;
+}
+.teachers_list .panel .x_content ul li .list_touch span {
+  display: block;
+  padding: 0 8px 0 12px;
+  float: left;
+  margin-right: 16px;
+  background-color: #fff;
+  color: #f26355;
+  font-size: 12px;
+  border-radius: 2px;
+  background-image: url(../../images/fudaojun_tag.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.teachers_list .panel .x_content ul li:hover .list_image {
+  border-bottom: 0;
+  border-radius: 0 0 50px 50px;
+  height: 100px;
+  display: inline-block;
+  overflow: hidden;
+  width: 120px;
+  transition: 0.4s;
+}
+
+.pc {
+  height: 672px;
+  position: relative;
+}
+.pc .versions {
+  position: absolute;
+}
+.pc .versions img {
+  width: 51px;
+}
+
+.phone {
+  height: 600px;
+}
+
+.pad {
+  height: 600px;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,512 @@
+    <%= header %>	
+    <link type="text/css" rel="stylesheet" href="css/teaos.css?v=4">
+	<script type="text/javascript">
+	    //growing
+	    var _vds = _vds || [];
+	    window._vds = _vds;
+	    (function(){
+	        _vds.push(['setAccountId', 'bac639b098cd7d95']);
+	        (function() {
+	            var vds = document.createElement('script');
+	            vds.type='text/javascript';
+	            vds.async = true;
+	            vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+	            var s = document.getElementsByTagName('script')[0];
+	            s.parentNode.insertBefore(vds, s);
+	        })();
+	    })();
+	    //360监测
+	    var _mvq = _mvq || [];
+	    _mvq.push(['$setAccount', 'm-116614-0']);
+	    _mvq.push(['$logConversion']);
+	    (function() {
+	        var mvl = document.createElement('script');
+	        mvl.type = 'text/javascript'; mvl.async = true;
+	        mvl.src = ('https:' == document.location.protocol ? 'https://static-ssl.mediav.com/mvl.js' : 'http://static.mediav.com/mvl.js');
+	        var s = document.getElementsByTagName('script')[0];
+	        s.parentNode.insertBefore(mvl, s);
+	    })();
+	    function mvclick() {
+	        var d = new Date();
+	        var id = d.getYear().toString() + (d.getMonth() + 1).toString() + d.getDate().toString() + d.getHours().toString() + d.getMinutes().toString() + d.getSeconds().toString();
+	        id += "." + Math.random();
+	        _mvq.push(['custom', 'jzqu2', id, '']);
+	        _mvq.push(['$logConversion']);
+	    }
+    </script>
+    <script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?b4c3081e2839a70c619a9c9b1e0eedae";
+		  var s = document.getElementsByTagName("script")[0];
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	<script src="lib/jquery.scrollLoading/jquery.scrollLoading-min.js"></script>
+    <script>
+        $(function () {
+            $(".scrollLoading").scrollLoading();
+        });
+    </script>
+</head>
+<body>
+	<!-- header -->
+	<div id="header">
+		<!--top start-->
+		<%= topbar %>
+
+    
+		<!-- navigation -->
+		<div class="nav-bar">
+			<div class="nav-box">
+				<div class="nav">
+					<ul class="navigation">
+						<li>
+							<a href="index.html" target="_self" title="辅导君首页">首页</a>
+						</li>
+						<li>
+							<a href="course.html" target="_self" title="课程定制">课程定制</a>
+						</li>
+						<li>
+							<a href="oneadv.html" title="5大优势" target="_self">1对1优势</a>
+						</li>
+						<li>
+							<a href="teachers.html" title="顶尖师资" target="_self">师资优势</a>
+						</li>
+						<li>
+							<a href="studentkb.html" title="学员口碑" target="_self">学员口碑</a>
+						</li>
+						<li>
+							<a href="news.html" title="辅导资讯" target="_self">辅导资讯</a>
+						</li>
+						<li style="padding-right:0;">
+							<a href="download.html" target="_self" title="教学系统" class="cur">教学系统</a>
+						</li>
+					</ul>
+					<div class="curBg"></div>
+				</div>
+				<!-- logo -->
+				<a href="index.html" target="_self" title="辅导君" class="logo">
+					<img src="images/fudaojun_logo.png" height="56" alt="辅导君">
+					<div class="slogan">
+						初高中
+						<br>1对1在线辅导</div>
+				</a>
+				<!-- /logo -->
+			</div>
+		</div>
+		<!-- /navigation -->
+	</div>
+	<!-- /header -->
+
+	<!-- wrapper -->
+	<div id="wrapper">
+		<!--提示弹窗-->
+		<div id="pop_cover" class="cover" style="display:none;">
+			<div class="popup_window">
+				<div class="top">
+					- 选择您想咨询的课程 -
+					<div id="pop_close_btn" class="popup_exit">
+						<a href="javascript:void(0);" title="关闭">
+							<img src="static/images/fudaojun_popul_exit.png" alt="关闭"></a>
+					</div>
+				</div>
+				<div class="content">
+					<a href="javascript:void(0);" class="row1 zixun_btn">
+						<img src="static/images/fudaojun_popup_img1.jpg" width="100%">
+						<div class="text">
+							<h2>
+								顶尖名师<br />
+								<span>在线1对1</span>
+								辅导
+							</h2>						
+							<span>预约免费试听</span>
+						</div>
+					</a>
+					<a href="javascript:void(0);" class="row2">
+						<div class="upper zixun_btn">
+							<img src="static/images/fudaojun_popup_img2.jpg" width="100%">
+							<div class="text">
+								<h2>高中全科同步辅导</h2>
+								<span>预约免费试听</span>
+							</div>
+						</div>
+						<div class="under zixun_btn">
+							<img src="static/images/fudaojun_popup_img4.jpg" width="100%">
+							<div class="text">
+								<h2>小学全科同步辅导</h2>
+								暂未开放，<span>敬请期待</span>
+							</div>
+						</div>
+					</a>
+					<a href="javascript:void(0);" class="row3">
+						<div class="upper zixun_btn">
+							<img src="static/images/fudaojun_popup_img3.jpg" width="100%">
+							<div class="text">
+								<h2>初中全科同步辅导</h2>
+								<span>预约免费试听</span>
+							</div>
+						</div>
+						<div class="under zixun_btn">
+							<img src="static/images/fudaojun_popup_img5.jpg" width="100%">
+							<div class="text">
+								<h2>
+									学考
+									<span>复习冲刺</span>
+								</h2>
+								特别适合浙江、上海地区
+							</div>
+						</div>
+					</a>
+					<div class="bottom">
+						<img src="static/images/fudaojun_popul_slogan.png" alt="slogan">
+						<input id="pop_sure_btn" type="button" value="立即咨询" class="popup_btn"></div>
+				</div>
+			</div>
+		</div>
+		<!--提示弹窗-->
+		<style>
+			.mac{width:536px;height:auto;top:300px;left:50%;margin-left:-268px;}
+		</style>
+		<!-- banner -->
+		<div class="banner-wrapper">
+			<div class="banner" style="overflow: hidden;">
+				<div class="subpage_banner hei-100">
+					<img src="images/teaos_bj.png" alt="" class="img-block wid-100 absol left0 top0 hei-100">
+                    <div class="bannerwz">
+                        <div class="dw">
+                            <img class="im-cent" src="images/teaosbanner_1.png">
+                            <div class="cont">
+                                <div class="zhutiwz">
+                                    <span class="tit floatL">辅导君客户端PC版</span>
+                                    <div class="dw floatL ML-10">
+                                        <img src="images/banbennum.png" alt="">
+                                        <div class="bbnum">2.0.9</div>
+                                    </div>
+                                </div>
+                                <div class="banben">
+                                    <span>更新日期：2017年01月19日</span>
+                                    <span>适配环境：Windows xp/7/8/10</span>
+                                </div>
+
+                                <a href="http://files.fudaojun.com/fudaojunV1.exe" class="MT-30 bg-red11 width-180 height-50 mar-center img-block">
+								    <div class="floatL hei-100 borR1-red2 width-50 height-50">
+										<img src="images/xzicon.png" class="width-26 height-26 MT-12" alt="">
+									</div>
+                                    <div class="width-129 text-center line-50 height-50 FS-24 floatL FC-white line-24">免费下载</div>
+                                </a>
+                            </div>
+							<img src="images/mac.png" alt="" class="img-block absol  mac">
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+		<!-- /banner -->
+
+
+        <div class="content">
+            <div class="page1 wid-100 hei-100 bg-white">
+                <div class="page1_cont hei-100">
+                    <div class="floatL pageleft wid-100 hei-100">
+                        <div class="dw wid-100 hei-100">
+                            <img class="ceng1" src="images/cengdie/ceng1.png" alt="">
+                            <img class="ceng2" src="images/cengdie/ceng2.png" alt="">
+                            <img class="ceng3" src="images/cengdie/ceng3.png" alt="">
+                            <img class="ceng4" src="images/cengdie/ceng4.png" alt="">
+                            <img class="ceng5" src="images/cengdie/ceng5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="floatL pageright hei-100 width-400">
+                        <div class="text-right FS-32 FC-black MT-110" style="margin-bottom:50px;">辅导君客户端手机端</div>
+						<div class="text-right FC-gray14 line-20 FS-20">
+							<div class="MB-10">在线直播，手机上课，高效方便</div>
+							<div>家长旁听，一键旁听，课程回放</div>
+						</div>
+						<div class="MT-80 MB-20">
+							<div class="floatL ML-70">
+								<a href="https://itunes.apple.com/cn/app/fu-dao-jun-chu-gao-zhong-yi/id1124791974?mt=8" class="MT-2 bg-red11 width-180 height-50 mar-center img-block">
+								    <div class="floatL hei-100 borR1-red2 width-50 height-50">
+										<img src="images/iphone.png" class="width-26 height-26 MT-12 ML-12" alt="">
+									</div>
+                                    <div class="width-129 text-center line-50 height-50 FS-24 floatL FC-white line-24">IOS</div>
+                                </a>
+								<a href="http://files.fudaojun.com/android/app-fudaojun-release.apk" class="MT-16 bg-red11 width-180 height-50 mar-center img-block">
+								    <div class="floatL hei-100 borR1-red2 width-50 height-50">
+										<img src="images/anzhuo.png" class="width-26 height-26 MT-12 ML-12" alt="">
+									</div>
+                                    <div class="width-129 text-center line-50 height-50 FS-24 floatL FC-white line-24">Android</div>
+                                </a>
+							</div>
+							<div class="floatR width-120 height-120">
+								<img src="images/ewm.png" class="wid-100 hei-100" alt="">
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="FS-16 FC-gray16 line-16 text-right">系统要求：Android 4.1及以上；IOS 8.0及以上</div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+			
+            <div class="page2 wid-100 hei-100 bg-white">
+                <div class="page2_cont hei-100">
+                    <div class="floatL width-400 hei-100">
+                        <div class="FS-40 FC-black MT-110 MB-30">辅导君客户端Pad端</div>
+						<div class="FC-gray14 line-20 FS-20">
+							<div class="MB-10">课程白板，实时板书，画图互动无障碍</div>
+							<div>实时对话，语音通话，与老师"0"距离</div>
+						</div>
+						<div class="MT-80 MB-20">
+							<div class="floatL">
+								<a href="https://itunes.apple.com/cn/app/fu-dao-jun-chu-gao-zhong-yi/id1124791974?mt=8" class="MT-2 bg-red11 width-180 height-50 mar-center img-block">
+								    <div class="floatL hei-100 borR1-red2 width-50 height-50">
+										<img src="images/iphone.png" class="width-26 height-26 MT-12 ML-12" alt="">
+									</div>
+                                    <div class="width-129 text-center line-50 height-50 FS-24 floatL FC-white line-24">IOS</div>
+                                </a>
+								<a href="http://files.fudaojun.com/android/app-fudaojun-release.apk" class="MT-16 bg-red11 width-180 height-50 mar-center img-block">
+								    <div class="floatL hei-100 borR1-red2 width-50 height-50">
+										<img src="images/anzhuo.png" class="width-26 height-26 MT-12 ML-12" alt="">
+									</div>
+                                    <div class="width-129 text-center line-50 height-50 FS-24 floatL FC-white line-24">Android</div>
+                                </a>
+							</div>
+							<div class="floatL width-120 height-120 ML-54">
+								<img src="images/ewm.png" class="wid-100 hei-100" alt="">
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="FS-16 FC-gray16 line-16 text-left">系统要求：Android 4.1 及以上；IOS 8.0 及以上</div>
+                    </div>
+					<div class="floatL width-700 pageright hei-100">
+                        <div class="dw wid-100 hei-100">
+                            <img class="ceng1" src="images/cengpad/pad1.png" alt="">
+                            <img class="ceng2" src="images/cengpad/pad2.png" alt="">
+                            <img class="ceng3" src="images/cengpad/pad3.png" alt="">
+                            <img class="ceng4" src="images/cengpad/pad4.png" alt="">
+                            <img class="ceng5" src="images/cengpad/pad5.png" alt="">
+							<img class="ceng6" src="images/cengpad/pad6.png" alt="">
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+		
+		
+
+		<!-- bottom_red -->
+		<div class="bottom_red">
+			<div class="part_con">
+				<ul>
+					<li class="al-1">
+						<h5>免费试听</h5>
+						<p>先满意再付款</p>
+					</li>
+					<li class="al-2">
+						<h5>价格平价</h5>
+						<p>线上没有额外成本</p>
+					</li>
+					<li class="al-3">
+						<h5>无忧退费</h5>
+						<p>不满意随时退</p>
+					</li>
+					<li class="al-4">
+						<h5>任选名师</h5>
+						<p>全国top10名校超强师资</p>
+					</li>
+					<li class="al-5" style="padding-right:0">
+						<h5>优质服务</h5>
+						<p>全程监督，贴心服务</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /bottom_red -->
+	</div>
+	<!-- /wrapper -->
+	
+	<!--报名 start-->
+	<div id="bottom_fixed" class="float-apply-box">
+		<div class="float-apply-bg"></div>
+		<div class="float-apply">
+			<img src="static/images/fudaojun_float_apply.png" width="81" alt="0元试听" class="apply_img"/>
+            <img src="static/images/fudaojun_apply_text.png" width="356" alt="学霸辅导急速提分，0元试听" class="apply_text" />
+			<div class="form_group">
+				<iframe src="http://chat.talk99.cn/chat/form?c=20001566&conf=6795" allowTransparency="true" frameborder="0" scrolling="no" width="620" height="130"></iframe>
+			</div>
+		</div>
+        <div id="bottom_fixed_close_btn" class="apply_exit">
+				<img src="static/images/fudaojun_apply_exit.png" width="12" alt="关闭">
+        </div>
+	</div>
+	<!--报名 end-->
+    <!--右侧浮标 start-->
+	<style>
+		.nav-right div{left:-150px;display:none;}
+		.nav-right a:hover div{display:block;background-color:#666666;}
+	</style>
+	<div class="nav-right width-60 height-270 fixed right-15 top-40-per MT135 z-index-1000">
+		<a href="javascript:void(0);" title="在线客服" class="online zixun_btn dw img-block MB-10 bg-red11 width-60 height-60">
+			<img src="images/fudaojun_float_member1.png" class="img-block PT-5 mar-center" style="width:30px;" alt="在线客服">
+			<span class="FS-14 FC-white text-center img-block">客服</span>
+			<div class="zixun_btn width-140 height-60 FS-18 FC-white line-60 absol top0 bg-red11 text-center">在线客服</div>
+		</a>
+        <a href="tencent://message/?uin=1320648868&amp;Site=企业网站&amp;Menu=yes" title="QQ咨询" class="qqzixun dw img-block MB-10 width-60 height-60 bg-gray19">
+			<img src="images/fudaojun_float_qq1.png" class="img-block PT-5 mar-center" style="width:30px;" alt="QQ咨询">
+			<span class="FS-14 FC-white text-center img-block">QQ</span>
+			<div class="width-140 height-60 FS-18 FC-white line-60 absol top0 bg-red11 text-center">QQ咨询</div>
+		</a>
+		<a href="javascript:void(0);" title="热线电话" class="service_tel dw img-block MB-10 width-60 height-60 bg-gray19">
+			<img src="images/fudaojun_float_tel1.png" class="img-block PT-5 mar-center" style="width:30px;" alt="热线电话">
+			<span class="FS-14 FC-white text-center img-block">热线</span>
+			<div class="width-140 height-60 FS-18 FC-white line-60 absol top0 bg-red11 text-center">400-036-2990</div>
+		</a>
+		<a id="right_top_btn" title="返回顶部" href="javascript:void(0);" class="top dw img-block MB-10 width-60 height-60 bg-gray19">
+			<img src="images/fudaojun_float_top1.png" class="img-block PT-5 mar-center" style="width:30px;" alt="返回顶部">
+			<span class="FS-14 FC-white text-center img-block">顶部</span>
+		</a>
+	</div>
+	<!--右侧浮标 end-->
+
+	<!-- footer -->
+	<div id="footer">
+		<div class="part_con">
+			<ul class="foot_nav">
+				<li style="padding-left:0;"><a href="static/direction.html">使用帮助</a></li>
+				<li><a href="https://static.dayi.im/static/fudaojun/rule.html?version=20160603182000">网站条款</a></li>
+				<li><a href="http://user.fudaojun.com/fudaojun/return_pay_procedure/">极速退费</a></li>
+				<li><a href="static/faq.html">学习指导</a></li>
+				<li style="border:none;"><a href="static/about.html">关于我们</a></li>
+			</ul>
+			<div class="fudaojun_foot_tel">
+				<img src="images/fudaojun_foot_tel.png">
+				提分热线：400-036-2990
+			</div>
+			<p>
+				Copyright © 2016 杭州微著网络有限公司 |
+				<a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" title="ICP" target="_blank">
+					浙ICP备09061298号-5
+					<img src="images/fudaojun_police.png" width="16"></a>
+				| 浙江省杭州市古墩路413号文新图书大楼9F
+			</p>
+			<div class="wechat">
+				<ul>
+					<li>
+						<img src="images/fudaojun_wechat.png" alt="辅导君微信服务号">
+						<span>辅导君微信服务号</span>
+					</li>
+					<li style="margin:0;">
+						<img src="images/fudaojun_wechat_dayijun.png" alt="答疑君微信服务号">
+						<span>答疑君微信服务号</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	
+	<script src="js/nav.js"></script>
+    <script src="js/footer.js"></script>
+	<script src="js/teaos.js"></script>
+
+	<!-- banner -->
+	<script src="lib/unslider/unslider.js"></script> 
+	<script src="js/banner.js"></script>
+	<!-- /banner -->
+	<script language="javascript" type="text/javascript">
+		(function () {
+			if (typeof is_logining != 'undefined') {
+				if (is_logining) {
+					document.getElementById('bottom_fixed').style.display = "none";
+				}else{
+					document.getElementById('bottom_fixed').style.display = "block";
+				}
+			}
+		})();
+		try {
+			(function () {
+				document.getElementById('doyoo_share').style.display = "none";
+				var looyu_leave = document.getElementById('looyu_leave');
+				looyu_leave.parentNode.removeChild(looyu_leave);
+		
+				var allsuspects = document.getElementsByTagName('link');
+				for (var i = allsuspects.length; i >= 0; i--) {
+					if (allsuspects[i] && allsuspects[i].getAttribute('href') != null && allsuspects[i].getAttribute('href').indexOf('talk99.css') != -1) {
+						allsuspects[i].parentNode.removeChild(allsuspects[i]);
+					}
+				}
+			})();
+			}catch(err){
+				console.info('发生了一个错误：' + err.description);
+			}
+		$(function(){
+			// 咨询按钮
+			$('.zixun_btn').click(function(e){
+				e.stopPropagation();
+				e.preventDefault();
+				doyoo.util.openChat();
+			});
+			// 退出登录
+			var is_logouting = false;
+			$('#logout_btn').click(function(){
+				var $this = $(this);
+				is_logouting = true;
+				$this.css('opacity', '0.6');
+				$.get('/fudaojun/ajax_logout/?random=' + Math.random(), {}, function(ret){
+					if(ret.retcode == 1){
+						window.location.href = '/fudaojun/login/';
+					}else{
+						is_logouting = false;
+						$this.css('opacity', '1.0');
+						$('#tip_cover_title').html('通知');
+						$('#tip_cover_content').html('退出失败，' + ret.msg);
+						$('#tip_cover').fadeIn();
+					}
+				}, 'json');
+			});
+		});
+    </script>
+    <!-- 热门课程弹窗 -->
+    <script type="text/javascript">
+    	$(function(){
+    		var cover_on_count = 0;
+			// 进入后60秒咨询弹窗
+			setTimeout(function() {
+				if (cover_on_count <= 0) {
+					$('#pop_cover').fadeIn();
+					cover_on_count += 1;
+				}
+			}, 60000);
+
+
+			$('#pop_close_btn').click(function() {
+				$('#pop_cover').fadeOut();
+				cover_on_count -= 1;
+			});
+			var $bottom_fixed = $('#bottom_fixed');
+			$('#bottom_fixed_close_btn').click(function() {
+				$bottom_fixed.fadeOut();
+			});
+			// 右边框
+			$('#right_top_btn').click(function() {
+				$(window).scrollTop(0);
+			});
+
+			$('#pop_sure_btn').click(function() {
+				$('#pop_cover').fadeOut();
+				cover_on_count -= 1;
+				doyoo.util.openChat();
+			});
+		})
+    </script>
+    <div style="display:none;">
+    	<script src="http://stat.xiaonaodai.com/stat.php?id=10934099" language="JavaScript" type="text/javascript"></script>
+		<script type="text/javascript" charset="utf-8" src="http://lead.soperson.com/20001566/10060553.js"></script>
+    </div>
+
+	
+</body>
+</html>

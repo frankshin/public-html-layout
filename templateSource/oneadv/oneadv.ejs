@@ -1,0 +1,545 @@
+    <%= header %>
+    <link type="text/css" rel="stylesheet" href="css/oneadv.css?v=3">
+	<script type="text/javascript">
+	    //growing
+	    var _vds = _vds || [];
+	    window._vds = _vds;
+	    (function(){
+	        _vds.push(['setAccountId', 'bac639b098cd7d95']);
+	        (function() {
+	            var vds = document.createElement('script');
+	            vds.type='text/javascript';
+	            vds.async = true;
+	            vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+	            var s = document.getElementsByTagName('script')[0];
+	            s.parentNode.insertBefore(vds, s);
+	        })();
+	    })();
+	    //360监测
+	    var _mvq = _mvq || [];
+	    _mvq.push(['$setAccount', 'm-116614-0']);
+	    _mvq.push(['$logConversion']);
+	    (function() {
+	        var mvl = document.createElement('script');
+	        mvl.type = 'text/javascript'; mvl.async = true;
+	        mvl.src = ('https:' == document.location.protocol ? 'https://static-ssl.mediav.com/mvl.js' : 'http://static.mediav.com/mvl.js');
+	        var s = document.getElementsByTagName('script')[0];
+	        s.parentNode.insertBefore(mvl, s);
+	    })();
+	    function mvclick() {
+	        var d = new Date();
+	        var id = d.getYear().toString() + (d.getMonth() + 1).toString() + d.getDate().toString() + d.getHours().toString() + d.getMinutes().toString() + d.getSeconds().toString();
+	        id += "." + Math.random();
+	        _mvq.push(['custom', 'jzqu2', id, '']);
+	        _mvq.push(['$logConversion']);
+	    }
+    </script>
+    <script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?b4c3081e2839a70c619a9c9b1e0eedae";
+		  var s = document.getElementsByTagName("script")[0];
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	<script src="lib/jquery.scrollLoading/jquery.scrollLoading-min.js"></script>
+    <script>
+        $(function () {
+            $(".scrollLoading").scrollLoading();
+        });
+    </script>
+</head>
+<body>
+	<!-- header -->
+	<div id="header">
+		<!--top start-->
+		<%= topbar %>
+
+		<!-- navigation -->
+		<div class="nav-bar">
+			<div class="nav-box">
+				<div class="nav">
+					<ul class="navigation">
+						<li>
+							<a href="index.html" target="_self" title="辅导君首页">首页</a>
+						</li>
+						<li>
+							<a href="course.html" target="_self" title="课程定制">课程定制</a>
+						</li>
+						<li>
+							<a href="oneadv.html" title="5大优势" target="_self" class="cur">1对1优势</a>
+						</li>
+						<li>
+							<a href="teachers.html" title="顶尖师资" target="_self">师资优势</a>
+						</li>
+						<li>
+							<a href="studentkb.html" title="学员口碑" target="_self">学员口碑</a>
+						</li>
+						<li>
+							<a href="news.html" title="辅导资讯" target="_self">辅导资讯</a>
+						</li>
+						<li style="padding-right:0;">
+							<a href="download.html" target="_self" title="教学系统">教学系统</a>
+						</li>
+					</ul>
+					<div class="curBg"></div>
+				</div>
+				<!-- logo -->
+				<a href="index.html" target="_self" title="辅导君" class="logo">
+					<img src="images/fudaojun_logo.png" height="56" alt="辅导君">
+					<div class="slogan">
+						初高中
+						<br>1对1在线辅导</div>
+				</a>
+				<!-- /logo -->
+			</div>
+		</div>
+		<!-- /navigation -->
+	</div>
+	<!-- /header -->
+
+	<!-- wrapper -->
+	<div id="wrapper">
+		<!--提示弹窗-->
+		<div id="pop_cover" class="cover" style="display:none;">
+			<div class="popup_window">
+				<div class="top">
+					- 选择您想咨询的课程 -
+					<div id="pop_close_btn" class="popup_exit">
+						<a href="javascript:void(0);" title="关闭">
+							<img src="static/images/fudaojun_popul_exit.png" alt="关闭"></a>
+					</div>
+				</div>
+				<div class="content">
+					<a href="javascript:void(0);" class="row1 zixun_btn">
+						<img src="static/images/fudaojun_popup_img1.jpg" width="100%">
+						<div class="text">
+							<h2>
+								顶尖名师<br />
+								<span>在线1对1</span>
+								辅导
+							</h2>						
+							<span>预约免费试听</span>
+						</div>
+					</a>
+					<a href="javascript:void(0);" class="row2">
+						<div class="upper zixun_btn">
+							<img src="static/images/fudaojun_popup_img2.jpg" width="100%">
+							<div class="text">
+								<h2>高中全科同步辅导</h2>
+								<span>预约免费试听</span>
+							</div>
+						</div>
+						<div class="under zixun_btn">
+							<img src="static/images/fudaojun_popup_img4.jpg" width="100%">
+							<div class="text">
+								<h2>小学全科同步辅导</h2>
+								暂未开放，<span>敬请期待</span>
+							</div>
+						</div>
+					</a>
+					<a href="javascript:void(0);" class="row3">
+						<div class="upper zixun_btn">
+							<img src="static/images/fudaojun_popup_img3.jpg" width="100%">
+							<div class="text">
+								<h2>初中全科同步辅导</h2>
+								<span>预约免费试听</span>
+							</div>
+						</div>
+						<div class="under zixun_btn">
+							<img src="static/images/fudaojun_popup_img5.jpg" width="100%">
+							<div class="text">
+								<h2>
+									学考
+									<span>复习冲刺</span>
+								</h2>
+								特别适合浙江、上海地区
+							</div>
+						</div>
+					</a>
+					<div class="bottom">
+						<img src="static/images/fudaojun_popul_slogan.png" alt="slogan">
+						<input id="pop_sure_btn" type="button" value="立即咨询" class="popup_btn">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--提示弹窗-->
+		<!-- banner -->
+		<div class="banner-wrapper">
+			<div class="banner" style="overflow: hidden;">
+				<div class="subpage_banner">
+					<img class="im-cent" src="images/banner_11.png">
+				</div>
+				<a class="banner_btn zixun_btn" title="免费预约按钮" href="javascript:void(0);">免费咨询</a>
+			</div>
+		</div>
+		<!-- /banner -->
+
+		<style>
+			.icored{width:4px;height:20px;background: #F26355;float:left;margin-right:10px;margin-top:6px;}
+		</style>
+
+        <div class="content_oneadv">
+            <ul class="nav_left">
+                <li class="active">辅导君优势</li>
+                <li>1对1辅导优势</li>
+                <li>1对1辅导目标</li>
+                <li>1对1辅导帮助</li>
+				<li>辅导君帮助</li>
+                <li>1对1辅导流程</li>
+                <li>1对1辅导价格</li>
+            </ul>
+
+            <div class="nav_right">
+                <div class="rig_con">
+                    <div class="tit">
+                        <div class="icored"></div>
+						<div style="float:left;">辅导君优势</div>
+					</div>
+                    <p>
+                        1、1对1在线辅导利用互联网打破线下辅导班、家教的传统授课方式，能够随时随地上课，不受时间、地域限制，真正为孩子请到全国顶级名牌大学的精英学霸作为辅导老师，让所有学生都能共享全国名师优课。<br/>
+                        2、辅导君提供“专业的1对1在线辅导”，因材施教，完全定制化教学让孩子能够个性化、多方位、多维度的综合成长。<br/>
+                        3、辅导君的老师存在和孩子代沟小、沟通顺畅、教学经验丰富、耐心足、有独家学习应试经验等优势，在教学上更能注重硬技能和软技能之间的结合，硬技能就是学生学习必须了解的学科知识点、必须达到的考试要求，软技能包括考试心态、学习习惯、学习方法，从而达到综合提升，全面发展的目的。<br/>
+                    </p>
+                </div>
+                <div class="rig_con">
+                    <div class="tit">
+						<div class="icored"></div>
+					    <div style="float:left;">1对1辅导优势</div>
+					</div>
+                    <p>
+                        1、教学内容和辅导方式充分考虑学生的独特性和差异性，相对比于大班课、小班课，更具针对性的为学生制定辅导计划，只讲学生不会的知识点，避免在会的知识点上浪费时间；并且课堂上老师也能将注意力100%集中于一个学生身上，更加有效的提升课堂效率。<br/>
+                        2、教学模式更具人性化特点，学霸老师更了解青春期学生心理特性，也易成为学生学习中的榜样，生活的成长伙伴。全面的管理，全方位为学生制定学习计划。<br/>
+                        3、注重学习结果更注重学习状态及心理状况。解决学生在生活中的问题，为学生营造了一种全新的学习氛围，通过相互感染，使学生在学习过程中产生学习的动力和强烈的学习意识，让学生更加关注学习，教会学生怎么去学习。<br/>
+                    </p>
+                </div>
+                <div class="rig_con">
+					<div class="tit">
+						<div class="icored"></div>
+					    <div style="float:left;">1对1辅导目标</div>
+					</div>
+                    <p>
+                        提高学习成绩，培养学生乐于学习，善于学习，敢于创新的能力。针对性对待每一位个性不同的学生，因材施教，循循善诱，让学生在学习成绩和学习能力方面逐步提升，不断摆正学习动机，学习更加有动力。
+                    </p>
+                </div>
+                <div class="rig_con">
+					<div class="tit">
+						<div class="icored"></div>
+					    <div style="float:left;">1对1辅导帮助</div>
+					</div>
+                    <p>
+						<span class="qust">Q1：辅导君老师如何？</span><br/>
+						<span>A1：辅导君和全国前二十名牌大学高校建立合作，汇集数万名优秀高材生为中学生提供一对一定制在线辅导。老师都是经过了专业的教学培训后筛选留下的，辅导君上的老师都是优选历年各省市高考状元，拥有自己独特的学习应试技巧。学生难理解的题目，辅导君精英老师能够举一反三，更能拓宽学生的思路，让学生更容易听懂。辅导君会对学生进行全面诊断，从排名动向、成绩曲线、知识弱点、学习方法、答题习惯五大维度入手，为学生量身打造个性化辅导方案。</span><br/>
+						<span class="qust">Q2：辅导君收费贵吗？</span><br/>
+						<span>A2：辅导君是按套餐课时收费，性价比是非常高的，节省教室租赁及装修的费用，这些都是补贴给老师来提升教学质量，补课费用基本是线下辅导机构的三分之一。而且可以首节课免费试听，试听满意再报课。辅导价格是和您选择的辅导年级段、课程老师不同而不同的，辅导君老师是通过层层选拨出来的，并且为了保证教学质量，辅导君制定了严格的教师考核制度，筛选突出的老师。辅导时间以学生的课余时间为主，每次上课一般为1~2个小时，也可以跟据学员具体情况而定。</span></br/>
+						<span class="qust">Q3：辅导君辅导效果怎么样？</span><br/>
+						<span>A3：辅导君往期学员平均提分25.6分；58.9%一本上线率；4325名学员达到中高考目标。授课老师根据孩子的具体情况，制定个性化的教学方案，帮助孩子纠正学习习惯，找到真正适合孩子的学习方法，从根本上解决孩子学习的问题。
+                        辅导君是全国知名在线教育品牌，专注于中小学在线一对一辅导。</span></br/>
+                    </p>
+                </div>
+				<div class="rig_con">
+					<div class="tit">
+						<div class="icored"></div>
+					    <div style="float:left;">辅导君帮助</div>
+					</div>
+                    <p>
+                        1.辅导君突破线下教育的地域限制，高薪聘请全国前20名校师资；<br/>
+                        2.辅导君依托互联网技术，打造先进的移动在线课堂，老师真人1对1辅导，每分钟都有互动，孩子爱学不走神。课堂全程录像，孩子课后可反复观看，学习效果成倍提升；<br/>
+                        3.辅导君专注于高品质教学，是一家教学过程真正对家长完全开放的教育机构，家长可以随时通过手机旁听课堂，教的好不好立刻知道，不花冤枉钱。<br/>
+					</p>
+                </div>
+				<div class="rig_con">
+					<div class="tit" style="margin-bottom:34px;">
+						<div class="icored"></div>
+					    <div style="float:left;">1对1辅导流程</div>
+					</div>
+                     <div class="onelc">
+                        <ul>
+							<li class="one">Step1</li>
+							<li class="two">
+								<div class="titl">匹配最合适的老师</div>
+								<div class="con">根据学员的地区、年级、学科、学习情况、兴趣爱好、性格以及家长的需求等综合评估，挑选最合适的老师，不满意可立即更换老师</div>
+							</li>
+							<li class="three"><img src="images/onelc1.png" alt=""></li>
+						</ul>
+						<div class="jt"><img src="images/jt1.png" alt=""></div>
+						<ul>
+							<li class="one">Step2</li>
+							<li class="two">
+								<div class="titl">评测课（试听课）</div>
+								<div class="con">安排学员免费试听课程，老师多维度对学生进行评测，对学员的薄弱点、学习习惯、学习能力等方面进行综合诊断</div>
+							</li>
+							<li class="three"><img src="images/onelc2.png" alt=""></li>
+						</ul>
+						<div class="jt"><img src="images/jt1.png" alt=""></div>
+						<ul>
+							<li class="one">Step3</li>
+							<li class="two">
+								<div class="titl" style="margin-top:23px;">定制个性化教学方案</div>
+								<div class="con">根据学生的评测结果，制定个性化学习方案</div>
+							</li>
+							<li class="three"><img src="images/onelc3.png" alt=""></li>
+						</ul>
+						<div class="jt"><img src="images/jt1.png" alt=""></div>
+						<ul>
+							<li class="one">Step4</li>
+							<li class="two">
+								<div class="titl" style="margin-top:23px;">签订辅导协议</div>
+								<div class="con">根据家长需求签订辅导协议</div>
+							</li>
+							<li class="three"><img src="images/onelc4.png" alt=""></li>
+						</ul>
+						<div class="jt"><img src="images/jt1.png" alt=""></div>
+						<ul>
+							<li class="one">Step5</li>
+							<li class="two">
+								<div class="titl">安排正式辅导课程，动态调整教学计划</div>
+								<div class="con">根据课程规划、学生空余时间情况、学生需求，合理安排课程，根据学生掌握情况，不断动态调整教学计划，真正做到个性化教学</div>
+							</li>
+							<li class="three"><img src="images/onelc5.png" alt=""></li>
+						</ul>
+						<div class="jt"><img src="images/jt1.png" alt=""></div>
+						<ul>
+							<li class="one">Step6</li>
+							<li class="two">
+								<div class="titl" style="margin-top:23px;">6位1体全程陪伴，保障服务</div>
+								<div class="con">课程顾问、教务老师、班主任、学科老师、个性化教学专家、心理咨询师全程跟踪，保障教学服务</div>
+							</li>
+							<li class="three"><img src="images/onelc6.png" alt=""></li>
+						</ul>
+					</div>
+                </div>
+				<div class="rig_con">
+					<div class="tit">
+						<div class="icored"></div>
+					    <div style="float:left;">1对1辅导价格</div>
+					</div>
+                    <p>
+						<span class="qust">Q1：师资和收费标准如何？</span><br/>
+						<span>A1：辅导君的收费标准是依据选择年级段、科目、老师级别核算出所需的费用。不同年级、不同的课时数量，涉及到的收费都会有所不同。</span><br/>
+						<span class="qust">Q2：辅导君可以退费么？</span><br/>
+						<span>A2：家长购买课程后，辅导君按照所上课时数扣除相对应的课时费（课时数量x单节课价格），家长可根据自己的需求随时发起退费申请，经审核后可退还剩余课时费用，详情参考<a href="http://user.fudaojun.com/fudaojun/return_pay_procedure/" class="tf">《辅导君退费管理办法》</a></span></br/>
+                    </p>
+                </div>
+            </div>
+
+			<div class="clearfix"></div>
+        </div>
+		
+		
+
+		<!-- bottom_red -->
+		<div class="bottom_red">
+			<div class="part_con">
+				<ul>
+					<li class="al-1">
+						<h5>免费试听</h5>
+						<p>先满意再付款</p>
+					</li>
+					<li class="al-2">
+						<h5>价格平价</h5>
+						<p>线上没有额外成本</p>
+					</li>
+					<li class="al-3">
+						<h5>无忧退费</h5>
+						<p>不满意随时退</p>
+					</li>
+					<li class="al-4">
+						<h5>任选名师</h5>
+						<p>全国top10名校超强师资</p>
+					</li>
+					<li class="al-5" style="padding-right:0">
+						<h5>优质服务</h5>
+						<p>全程监督，贴心服务</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /bottom_red -->
+	</div>
+	<!-- /wrapper -->
+	
+	<!--报名 start-->
+	<div id="bottom_fixed" class="float-apply-box">
+		<div class="float-apply-bg"></div>
+		<div class="float-apply">
+			<img src="static/images/fudaojun_float_apply.png" width="81" alt="0元试听" class="apply_img"/>
+            <img src="static/images/fudaojun_apply_text.png" width="356" alt="学霸辅导急速提分，0元试听" class="apply_text" />
+			<div class="form_group">
+				<iframe src="http://chat.talk99.cn/chat/form?c=20001566&conf=6795" allowTransparency="true" frameborder="0" scrolling="no" width="620" height="130"></iframe>
+			</div>
+		</div>
+        <div id="bottom_fixed_close_btn" class="apply_exit">
+				<img src="static/images/fudaojun_apply_exit.png" width="12" alt="关闭">
+        </div>
+	</div>
+	<!--报名 end-->
+    <!--右侧浮标 start-->
+	<style>
+		.nav-right div{left:-150px;display:none;}
+		.nav-right a:hover div{display:block;background-color:#666666;}
+	</style>
+	<div class="nav-right width-60 height-270 fixed right-15 top-40-per MT135 z-index-1000">
+		<a href="javascript:void(0);" title="在线客服" class="online zixun_btn dw img-block MB-10 bg-red11 width-60 height-60">
+			<img src="images/fudaojun_float_member1.png" class="img-block PT-5 mar-center" style="width:30px;" alt="在线客服">
+			<span class="FS-14 FC-white text-center img-block">客服</span>
+			<div class="zixun_btn width-140 height-60 FS-18 FC-white line-60 absol top0 bg-red11 text-center">在线客服</div>
+		</a>
+        <a href="tencent://message/?uin=1320648868&amp;Site=企业网站&amp;Menu=yes" title="QQ咨询" class="qqzixun dw img-block MB-10 width-60 height-60 bg-gray19">
+			<img src="images/fudaojun_float_qq1.png" class="img-block PT-5 mar-center" style="width:30px;" alt="QQ咨询">
+			<span class="FS-14 FC-white text-center img-block">QQ</span>
+			<div class="width-140 height-60 FS-18 FC-white line-60 absol top0 bg-red11 text-center">QQ咨询</div>
+		</a>
+		<a href="javascript:void(0);" title="热线电话" class="service_tel dw img-block MB-10 width-60 height-60 bg-gray19">
+			<img src="images/fudaojun_float_tel1.png" class="img-block PT-5 mar-center" style="width:30px;" alt="热线电话">
+			<span class="FS-14 FC-white text-center img-block">热线</span>
+			<div class="width-140 height-60 FS-18 FC-white line-60 absol top0 bg-red11 text-center">400-036-2990</div>
+		</a>
+		<a id="right_top_btn" title="返回顶部" href="javascript:void(0);" class="top dw img-block MB-10 width-60 height-60 bg-gray19">
+			<img src="images/fudaojun_float_top1.png" class="img-block PT-5 mar-center" style="width:30px;" alt="返回顶部">
+			<span class="FS-14 FC-white text-center img-block">顶部</span>
+		</a>
+	</div>
+	<!--右侧浮标 end-->
+
+	<!-- footer -->
+	<div id="footer">
+		<div class="part_con">
+			<ul class="foot_nav">
+				<li style="padding-left:0;"><a href="static/direction.html">使用帮助</a></li>
+				<li><a href="https://static.dayi.im/static/fudaojun/rule.html?version=20160603182000">网站条款</a></li>
+				<li><a href="http://user.fudaojun.com/fudaojun/return_pay_procedure/">极速退费</a></li>
+				<li><a href="static/faq.html">学习指导</a></li>
+				<li style="border:none;"><a href="static/about.html">关于我们</a></li>
+			</ul>
+			<div class="fudaojun_foot_tel">
+				<img src="images/fudaojun_foot_tel.png">
+				提分热线：400-036-2990
+			</div>
+			<p>
+				Copyright © 2016 杭州微著网络有限公司 |
+				<a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" title="ICP" target="_blank">
+					浙ICP备09061298号-5
+					<img src="images/fudaojun_police.png" width="16"></a>
+				| 浙江省杭州市古墩路413号文新图书大楼9F
+			</p>
+			<div class="wechat">
+				<ul>
+					<li>
+						<img src="images/fudaojun_wechat.png" alt="辅导君微信服务号">
+						<span>辅导君微信服务号</span>
+					</li>
+					<li style="margin:0;">
+						<img src="images/fudaojun_wechat_dayijun.png" alt="答疑君微信服务号">
+						<span>答疑君微信服务号</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	
+	<script src="js/nav.js"></script>
+    <script src="js/footer.js"></script>
+	<script src="js/oneadv.js"></script>
+
+	<!-- banner -->
+	<script src="lib/unslider/unslider.js"></script> 
+	<script src="js/banner.js"></script>
+	<!-- /banner -->
+	<script language="javascript" type="text/javascript">
+		(function () {
+			if (typeof is_logining != 'undefined') {
+				if (is_logining) {
+					document.getElementById('bottom_fixed').style.display = "none";
+				}else{
+					document.getElementById('bottom_fixed').style.display = "block";
+				}
+			}
+		})();
+		try {
+			(function () {
+				document.getElementById('doyoo_share').style.display = "none";
+				var looyu_leave = document.getElementById('looyu_leave');
+				looyu_leave.parentNode.removeChild(looyu_leave);
+		
+				var allsuspects = document.getElementsByTagName('link');
+				for (var i = allsuspects.length; i >= 0; i--) {
+					if (allsuspects[i] && allsuspects[i].getAttribute('href') != null && allsuspects[i].getAttribute('href').indexOf('talk99.css') != -1) {
+						allsuspects[i].parentNode.removeChild(allsuspects[i]);
+					}
+				}
+			})();
+			}catch(err){
+				console.info('发生了一个错误：' + err.description);
+			}
+		$(function(){
+			// 咨询按钮
+			$('.zixun_btn').click(function(e){
+				e.stopPropagation();
+				e.preventDefault();
+				doyoo.util.openChat();
+			});
+			// 退出登录
+			var is_logouting = false;
+			$('#logout_btn').click(function(){
+				var $this = $(this);
+				is_logouting = true;
+				$this.css('opacity', '0.6');
+				$.get('/fudaojun/ajax_logout/?random=' + Math.random(), {}, function(ret){
+					if(ret.retcode == 1){
+						window.location.href = '/fudaojun/login/';
+					}else{
+						is_logouting = false;
+						$this.css('opacity', '1.0');
+						$('#tip_cover_title').html('通知');
+						$('#tip_cover_content').html('退出失败，' + ret.msg);
+						$('#tip_cover').fadeIn();
+					}
+				}, 'json');
+			});
+		});
+    </script>
+    <!-- 热门课程弹窗 -->
+    <script type="text/javascript">
+    	$(function(){
+    		var cover_on_count = 0;
+			// 进入后60秒咨询弹窗
+			setTimeout(function() {
+				if (cover_on_count <= 0) {
+					$('#pop_cover').fadeIn();
+					cover_on_count += 1;
+				}
+			}, 60000);
+
+
+			$('#pop_close_btn').click(function() {
+				$('#pop_cover').fadeOut();
+				cover_on_count -= 1;
+			});
+			var $bottom_fixed = $('#bottom_fixed');
+			$('#bottom_fixed_close_btn').click(function() {
+				$bottom_fixed.fadeOut();
+			});
+			// 右边框
+			$('#right_top_btn').click(function() {
+				$(window).scrollTop(0);
+			});
+
+			$('#pop_sure_btn').click(function() {
+				$('#pop_cover').fadeOut();
+				cover_on_count -= 1;
+				doyoo.util.openChat();
+			});
+		})
+    </script>
+    <div style="display:none;">
+    	<script src="http://stat.xiaonaodai.com/stat.php?id=10934099" language="JavaScript" type="text/javascript"></script>
+		<script type="text/javascript" charset="utf-8" src="http://lead.soperson.com/20001566/10060553.js"></script>
+    </div>
+    	
+    
+</body>
+</html>

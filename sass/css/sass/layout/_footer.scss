@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+@import "utils/_variables.scss";
+@import "utils/_mixins.scss";
+@import "utils/_placeholders.scss";
+
+#footer{
+	width:100%;
+	height:160px;
+	background:#414141;
+	color:#999;
+	padding-top:40px;
+	a{
+		color:#999;
+	}
+	a:hover{
+		color:#fff;
+	}
+	.foot_nav{
+		width:470px;
+		height:17px;
+		li{
+			float:left;
+			padding:0 18px;
+			height:17px;
+			line-height:13px;
+			border-right:#979797 1px solid;
+		}
+	}
+	.fudaojun_foot_tel{
+		font-size:20px;
+		color:#999;
+		margin-top:20px;
+		img{
+			width:30px;
+			float:left;
+			margin-right:20px;
+		}
+	}
+	p{
+		margin-top:22px;
+	}
+	.wechat{
+		width: 248px;
+		height: 140px;
+		float:right;
+		margin-top:-138px;
+		ul{
+			li{
+				width: 109px;
+				height: 140px;
+				float: left;
+				margin-right: 30px;
+				text-align:center;
+				img{
+					width:100px;
+				}
+				span{
+					width: 100%;
+					float: left;
+					line-height: 24px;
+					font-size:12px;
+				}
+			}
+		}
+		
+	}
+}

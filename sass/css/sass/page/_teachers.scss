@@ -1,0 +1,225 @@
+@charset "utf-8";
+
+@import "utils/_variables.scss";
+@import "utils/_mixins.scss";
+@import "utils/_placeholders.scss";
+
+.subpage_banner{
+	.word2{
+		font-size:40px;
+		line-height:70px;
+
+		width:420px;
+		height:300px;
+		position:absolute;
+		top:90px;
+		left:60px;
+		span{
+			color:#f26355
+		}
+		.teac_btn{
+			margin-top:50px;
+		}
+	}
+}
+.teachers_our{
+	height:440px;
+	ul{
+		margin-top:82px;
+		li{
+			width:222px;
+			height:118px;
+			float:left;
+			margin-right:70px;
+			.t_figure{
+				font-size:64px;
+				color:#f26355;
+				font-family:arial;
+				line-height: 64px;
+				margin-bottom:25px;
+			}
+			.t_word{
+				font-size:23px;
+			}
+		}
+	}
+
+}
+
+.teachers_advantage{
+	height:562px;
+	position:relative;
+	ul{
+		margin-top:60px;
+		li{
+			width:160px;
+			height:190px;
+			float:left;
+			margin-right:75px;
+			img{
+				width:80px;
+			}
+			h4{
+				margin-top:10px;
+				font-size:19px;
+			}
+			p{
+				color:#999;
+				line-height:20px;
+				text-align:left;
+			}
+		}
+	}
+	.zixun_btn {
+	    position: absolute;
+	    bottom: 60px;
+	    left: 50%;
+	    margin-left: -80px;
+	}
+}
+
+.teachers_filtrate{
+	height:906px;
+	background:url(../../images/fudaojun_teachers_filtrate_bg.png) no-repeat center bottom;
+	position:relative;
+	ul{
+		margin-top:108px;
+		li{
+			width:100%;
+			font-size:20px;
+		}
+		li:nth-child(odd){
+			color:#fff;
+			margin-bottom:26px;
+		}
+		li:nth-child(even){
+			margin-bottom:36px;
+		}
+		li.odd{
+			color:#fff;
+			margin-bottom:26px;
+			*margin-bottom:23px;
+		}
+		li.even{
+			margin-bottom:36px;
+			*margin-bottom:33px;
+		}
+	}
+	.zixun_btn {
+	    position: absolute;
+	    bottom: 60px;
+	    left: 50%;
+	    margin-left: -80px;
+	}
+}
+
+.teachers_list{
+	height:1760px;
+	position:relative;
+	margin-bottom:40px;
+	.panel{
+		width:100%;
+		border-bottom:1px solid #ddd;
+		margin-bottom:40px;
+		margin-top:40px;
+		.x_panel{
+			// width:96px;
+			height:24px;
+			padding-left:20px;
+			border-left:6px solid #f26355;
+			font-size:24px;
+			line-height:20px;
+			margin-bottom:40px;
+			text-align:left;
+		}
+		.x_content{
+			height:425px;
+			ul{
+				li{
+					width:300px;
+					height:380px;
+					float:left;
+					margin-right:100px;
+					text-align: center;
+					box-shadow: 0 2px 6px 0 rgba(242, 99, 85, 0.1);
+					overflow: hidden;
+					img{
+						width: 100%;
+						vertical-align: bottom;
+					}
+					.list_image{
+						border-bottom: 4px solid #f26255;
+						transition: 0.4s;
+						height: 278px;
+						width: 100%;
+						display: inline-block;
+						float: none;
+						vertical-align: middle;
+						img{
+							width:100%;
+							vertical-align: bottom;
+						}
+					}
+					.list_info{
+						transition: 0.4s;
+					}
+					.college{
+						padding-top:18px;
+						font-size:24px;
+					}
+					.name{
+						font-size:18px;
+						color:#666;
+						margin-top:16px;
+					}
+					.goodAt{
+						color:#f26355;
+						margin-top:24px;
+						margin-bottom:22px;
+					}
+					p{
+						line-height:20px;
+						color:#666;
+						text-align:left;
+						padding-left:17px;
+						margin-bottom:24px;
+					}
+					.list_touch{
+						background-color: #f26355;
+						color:#fff;
+						float: left;
+						overflow: hidden;
+						padding: 10px 20px;
+						width: 100%;
+						transition: 0.4s;
+						span{
+							display:block;
+							padding:0 8px 0 12px;
+							float:left;
+							margin-right:16px;
+							background-color:#fff;
+							color:#f26355;
+							font-size:12px;
+							border-radius: 2px;
+							background-image:url(../../images/fudaojun_tag.png);
+							background-repeat:no-repeat;
+							background-position:left;
+
+						}
+					}
+				}
+				li:hover{
+					.list_image{
+						border-bottom: 0;
+						border-radius: 0 0 50px 50px;
+						height:100px;
+						display: inline-block;
+						overflow: hidden;
+						width: 120px;
+						transition: 0.4s;
+					}
+				}
+			}
+		}
+	}
+}

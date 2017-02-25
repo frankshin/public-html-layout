@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+@import "utils/_variables.scss";
+@import "utils/_mixins.scss";
+@import "utils/_placeholders.scss";
+
+.subpage_banner{
+	width:100%;
+	margin:0 auto;
+	position:relative;
+	.word{
+		z-index:100;
+		.word_bg{
+			width:500px;
+			height:110px;
+			background:#000;
+			filter: alpha(opacity=50);
+			-moz-opacity: 0.5;
+			opacity: 0.5;
+			padding:10px 0;
+			position:absolute;
+			top:90px;
+			left:50%;
+			margin-left:-250px;
+			z-index:101;
+		}
+		p{
+			font-size:34px;
+			text-align:center;
+			color:#fff;
+			line-height:1.6;
+			width:500px;
+			position:absolute;
+			top:98px;
+			left:50%;
+			margin-left:-250px;
+			z-index:102;
+		}
+	}
+	.im-cent{
+		position: absolute;
+		left: 50%;
+		margin-left: -960px;
+		top: 0px;
+	}
+
+}
+.apsc{
+	height:651px;
+	position:relative;
+	ul{
+		margin-top:115px;
+		li{
+			width:250px;
+			height:240px;
+			float:left;
+			margin-right:33px;
+			background:#fff;
+			box-shadow: 0 2px 6px 0 rgba(200,200,214,0.10);
+			position:relative;
+			i{
+				width:78px;
+				height:78px;
+				display:block;
+				background:url(../../images/fudaojun_apsc.png) no-repeat center;
+				font-size: 30px;
+				color: #fff;
+				font-family:Arial;
+				text-align:center;
+				line-height:74px;
+				position:absolute;
+				left:50%;
+				margin-left:-35px;
+				top:-35px;
+			}
+			.details{
+				margin-top:55px;
+				// text-align:center;
+				span{
+					width:100px;
+					height:21px;
+					display:block;
+					border-top:2px solid #ddd;
+					font-size: 16px;
+					color: #999999;
+					line-height: 16px;
+					margin-left:75px;
+					*margin-left:0;
+					line-height:21px;
+					margin-bottom:10px;
+				}
+				p{
+					color: #666666;
+				}
+			}
+		}
+		li:hover{
+			i{
+				background:url(../../images/fudaojun_apsc_hover.png) no-repeat center;
+			}
+			h4{
+				color:#f26355;
+			}
+		}
+	}
+	.zixun_btn {
+	    position: absolute;
+	    bottom: 60px;
+	    left: 50%;
+	    margin-left: -80px;
+	}
+}
+
+.course{
+	height:1270px;
+	position:relative;
+	.course_tab{
+		width:194px;
+		height:60px;
+		margin-top:10px;
+		display:inline-block;
+		a{
+			width:80px;
+			margin-right:34px;
+			text-align:center;
+			line-height:60px;
+			font-size:16px;
+			color:#666;
+			display: block;
+			float:left;
+		}
+		a.current{
+			border-bottom:2px solid #f26355;
+		}
+		a:hover{
+			color:#f26355;
+		}
+	}
+	.course_senior,.course_junior{
+		margin-top:40px;
+		p{
+			color:#999;
+			margin-bottom:80px;
+		}
+		.panel{
+			width:100%;
+			padding-bottom:15px;
+			border-bottom:1px solid #ddd;
+			margin-bottom:40px;
+			.x_panel{
+				// width:96px;
+				height:24px;
+				padding-left:20px;
+				border-left:6px solid #f26355;
+				font-size:24px;
+				line-height:20px;
+				margin-bottom:40px;
+				text-align:left;
+			}
+			.x_content{
+				text-align:left;
+				font-size:16px;
+				div{
+					width:100%;
+					height:24px;
+					margin-bottom:25px;
+				}
+				h4{
+					float:left;
+					margin-top:0;
+					margin-bottom:0;
+					margin-right:10px;
+				}
+				ul{
+					li{
+						float:left;
+						margin-right:10px;
+						width:55px;
+						height:24px;
+						background:url(../../images/fudaojun_course_tag.png) no-repeat center;
+						text-align:center;
+						line-height:22px;
+
+					}
+				}
+				p{
+					color:#444;
+				}
+			}
+		}
+	}
+	.zixun_btn {
+	    position: absolute;
+	    bottom: 60px;
+	    left: 50%;
+	    margin-left: -80px;
+	}
+}
+
+.teaching_service{
+	height:863px;
+	background:url("../../images/classdingzhi.png") no-repeat center;
+	position:relative;
+    background-size: 100% auto;
+	ul{
+		padding:0 40px;
+		margin-top:220px;
+		li{
+			width:130px;
+			height:24px;
+			float:left;
+			margin-right:163px;
+			margin-bottom:195px;
+			font-size:20px;
+			color:#666;
+			text-align:center;
+		}
+	}
+	p{
+		font-size: 20px;
+		color: #F26355;
+		margin-top:48px;
+	}
+	.zixun_btn {
+	    position: absolute;
+	    bottom: 60px;
+	    left: 50%;
+	    margin-left: -80px;
+	}
+	.duihua3{position:absolute;top:529px;left:-12px;width:160px;height:150px;opacity:1;filter:alpha(opacity=100);}
+	.duihua1{position:absolute;top:237px;left:562px;width:160px;height:150px;opacity:1;filter:alpha(opacity=100);}
+    .duihua2{position:absolute;top:559px;right:93px;width:90px;height:100px;opacity:1;filter:alpha(opacity=100);}
+	.duihua4{font-size: 18px;color: #F26355;line-height: 26px;position:absolute;top: 420px;right: 208px;}
+}
+
+.dif_point{
+	height:998px;
+	position:relative;
+	.point_tab{
+		width:194px;
+		height:60px;
+		margin-top:10px;
+		display:inline-block;
+		a{
+			width:80px;
+			margin-right:34px;
+			text-align:center;
+			line-height:60px;
+			font-size:16px;
+			color:#666;
+			display: block;
+			float:left;
+		}
+		a.current{
+			border-bottom:2px solid #f26355;
+		}
+		a:hover{
+			color:#f26355;
+		}
+	}
+	ul{
+		li{
+			width:160px;
+			height:215px;
+			float:left;
+			margin-right:75px;
+			margin-top:85px;
+			img{
+				width:60px;
+			}
+			h4{
+				margin-top:8px;
+				margin-bottom:14px;
+			}
+			p{
+				color:#999;
+				line-height:20px;
+			}
+		}
+	}
+	.zixun_btn {
+	    position: absolute;
+	    bottom: 60px;
+	    left: 50%;
+	    margin-left: -80px;
+	}
+}
