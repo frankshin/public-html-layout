@@ -49,7 +49,7 @@ folder_list.forEach(function(item,index,array){
 function generatehtml(obj){
     obj.forEach(function(pagename,index,array){
         const htmlgenerate = new HtmlWebpackPlugin({
-            title: '辅导君官网-初高中全科一对一在线辅导',
+            title: '前端引入公共html模块方案实现（一）',
             hash: true,
             filename: pagename + '.html',
             template: 'templateSource/' + pagename + '/' + pagename + '.js',
