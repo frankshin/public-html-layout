@@ -6,8 +6,10 @@
 */
 const header = require('../templateSource/commonhtml/header.html');
 const topbar = require('../templateSource/commonhtml/topbar.html');
+const footer = require('../templateSource/commonhtml/footer.html');
 const htmlconfig = {
     header: header,
-    topbar: topbar
+    topbar: topbar,
+    footer: footer
 };
 module.exports = htmlconfig;
