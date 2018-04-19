@@ -1,32 +1,3 @@
-.banner_kbwz{
-    height:500px;
-    left:50%;
-    margin-left:-550px;
-    z-index:100;
+body{
+    text-align: center;
 }
-
-.videofuc{background-color:black;opacity:0.6;filter: alpha(opacity=60);z-index:999;display:none;}
-.shipin{width:770px;height:490px;position:fixed;left:50%;top:50%;margin-left:-384px;margin-top:-245px;z-index:1000;display:none;}
-.videomodel{margin-top:-6px;}
-.close{top: 13px;right: 33px;line-height: 28px;height: 28px;cursor:pointer;}
-.class-tit{left: 31px;bottom: 10px;}
-.senior li:first-child{margin-left:0px!important;}
-.junior li:first-child{margin-left:0px!important;}
-
-
-/* 第一屏 */
-/*.content_kb .page1{width:100%;height:810px;background: #F9F9FB;}*/
-
-/* 第二屏 */
-.page2{height:795px;}
-
-/* 第三屏 */
-.page3{height:770px;}
-.page3 .huan{width:46px;height:46px;float:left;}
-.page3 .bili{width:25%;float:left;text-align:center;}
-
-/* 第四屏 */
-.page4 .chengjibang{width:754px;height:409px;}
-.page4 .chengjibang .shujulun{overflow:hidden;}
-
-
