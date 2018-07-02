@@ -5,5 +5,5 @@
  * @desc [description]
 */
 const publiclayout = require('../../publicLayout/main.js');
-const main_oneadv = require('./oneadv.ejs');
-module.exports = main_oneadv(publiclayout);
+const nav2 = require('./nav2.ejs');
+module.exports = nav2(publiclayout);
