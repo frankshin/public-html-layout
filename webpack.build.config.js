@@ -31,9 +31,6 @@ const exportConfig = {
               {from: './images',to:'./images/'},
               {from: './lib',to:'./lib/'},
               {from: './sass',to:'./sass/'}
-          ]),
-          new CopyWebpackPlugin([
-              {from : '404.html'}
           ])
     ]
 };
