@@ -31,16 +31,15 @@ const exportConfig = {
     ]
 };
 
-var str = 'commonhtml';
 folder_list.forEach(function(item,index,array){
-    if(str == item){
-      folder_list.splice(index,1);
-      generatehtml(folder_list);
+    if(item === 'commonhtml'){
+        folder_list.splice(index, 1);
+        generatehtml(folder_list);
     }
 });
 
-function generatehtml(obj){
-    obj.forEach(function(pagename,index,array){
+function generatehtml(pagesArray){
+    pagesArray.forEach(function(pagename,index,array){
         const htmlgenerate = new HtmlWebpackPlugin({
             title: '前端引入公共html模块方案实现（一）',
             hash: true,
