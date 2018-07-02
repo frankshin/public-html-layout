@@ -8,7 +8,7 @@ const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const TransferWebpackPlugin = require('transfer-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const folder_list = require('./config/webpack.dir-foreach.config.js');
+const folder_list = require('./config/webpack.dir-foreach.js');
 
 const exportConfig = {
     entry: {

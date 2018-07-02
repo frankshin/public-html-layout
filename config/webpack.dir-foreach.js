@@ -1,3 +1,6 @@
+/**
+ * note:
+ */
 const path = require('path');
 const traversdir = require('traversdir');
 
