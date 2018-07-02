@@ -20,8 +20,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "html": "node webpack.delbuild.config.js && webpack --config webpack.build.config.js",
-    "delhtml": "node webpack.delbuild.config.js"
+    "html": "node webpack.del.js && webpack --config webpack.pro.js"
   },
   "repository": {
     "type": "git",
