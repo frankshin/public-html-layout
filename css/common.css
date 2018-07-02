@@ -3,6 +3,13 @@
 li{list-style: none;}
 
 /* pages */
+.navigation {
+    height: 40px;
+    width: 100%;
+}
 .navigation li{
     float: left;
+    margin: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
