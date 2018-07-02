@@ -1,0 +1,8 @@
+/* reset */
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+
+/* pages */
+.navigation li{
+    float: left;
+}
