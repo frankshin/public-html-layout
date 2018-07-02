@@ -12,7 +12,7 @@ const folder_list = require('./base-config/webpack.dir-foreach.config.js');
 
 const exportConfig = {
     entry: {
-      'index': './js/index.js'
+      'app': './app/index.js'
     },
     output: {
       path: path.join(__dirname, '/publish','/html'),
@@ -27,8 +27,6 @@ const exportConfig = {
     plugins: [
           new TransferWebpackPlugin([
               {from: './css',to:'./css/'},
-              {from: './js',to:'./js/'},
-              {from: './images',to:'./images/'},
               {from: './lib',to:'./lib/'},
               {from: './sass',to:'./sass/'}
           ])
