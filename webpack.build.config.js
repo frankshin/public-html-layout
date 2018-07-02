@@ -26,9 +26,7 @@ const exportConfig = {
     },
     plugins: [
           new TransferWebpackPlugin([
-              {from: './css',to:'./css/'},
-              {from: './lib',to:'./lib/'},
-              {from: './sass',to:'./sass/'}
+              {from: './css',to:'./css/'}
           ])
     ]
 };
