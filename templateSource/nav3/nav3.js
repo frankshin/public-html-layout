@@ -5,5 +5,5 @@
  * @desc [description]
 */
 const publiclayout = require('../../publicLayout/main.js');
-const main_studentkb = require('./studentkb.ejs');
-module.exports = main_studentkb(publiclayout);
+const nav3 = require('./nav3.ejs');
+module.exports = nav3(publiclayout);
