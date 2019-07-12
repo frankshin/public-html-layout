@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node scripts/start.js",
+    "dev": "webpack-dev-server --config webpack.dev.js",
     "prod": "node scripts/prod.js",
     "build": "node webpack.del.js && webpack --config webpack.pro.js"
   },

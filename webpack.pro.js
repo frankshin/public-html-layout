@@ -6,6 +6,7 @@ const folder_list = require('./getTemplatesList.js');
 
 module.exports = (env, argv) => {
   const config = {
+    mode: 'production',
     entry: {
       'app': './app/index.js'
     },
