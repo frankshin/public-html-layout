@@ -15,11 +15,14 @@ package the public layout module for mutiple web pages with webpack
 // 安装依赖
 npm i
 
-// 执行demo的公共模块打包
-npm run html
+// 本地dev
+npm start
 
-// 如有需要，将自己的公共模块和commonhtml目录中的模块进行替换后重新打包生成自己的生产环境包
+// 执行公共模块打包，生成打包后的build目录
+npm run prod
 ```
+
+ps：如有需要，将自己的公共模块和commonhtml目录中的模块进行替换后重新打包生成自己的生产环境包
 
 ## 目录结构
 
