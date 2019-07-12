@@ -32,8 +32,6 @@ inquirer
     await execa('git', ['checkout', 'master'],  { stdio: 'inherit' })
     await execa('git', ['pull', 'origin', 'master'], { stdio: 'inherit' })
     await execa('npm', ['version', `${version}`, '--no-git-tag-version'], { stdio: 'inherit' })
-    // build
-    await execa('npm', ['run', 'build',  '--', `--env.version=${version}`], { stdio: 'inherit' })
     // 提交代码
     await execa('git', ['add', '-A'], { stdio: 'inherit' })
     await execa('git',
