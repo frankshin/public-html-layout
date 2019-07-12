@@ -1,5 +1,5 @@
 const del = require('del');
 
-del(['publish/html']).then(paths => {
+del(['build']).then(paths => {
     console.log('Deleted files and folders:\n', paths.join('\n'));
 });

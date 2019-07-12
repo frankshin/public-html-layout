@@ -1,13 +1,4 @@
-# common
-*.zip
-*.log
-
-# vscode
-.vscode
-
-# publish tool
-/publish/bin
-*.bat
+# node_modules
 /node_modules
 #html
-/publish/html
+/build

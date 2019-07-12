@@ -10,7 +10,7 @@ module.exports = (env, argv) => {
       'app': './app/index.js'
     },
     output: {
-      path: path.join(__dirname, '/publish','/html'),
+      path: path.join(__dirname, 'build'),
       filename: '[name].bundle.[hash].js',
     },
     module: {
