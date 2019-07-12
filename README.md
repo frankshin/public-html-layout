@@ -26,11 +26,3 @@ npm run html
 - publicLayout：公用模块整合中心
 - templateSource 各页面模板资源文件，也是引擎所需要收集处理的资源文件
 
-## v1.x.x（待发布）
-
-- 完成开发环境可热更新调试功能
-- 生产环境code进行编译压缩等处理
-
-## V1.0.0
-
-- 完成最基础的页面header、footer的公共引入和打包
