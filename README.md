@@ -18,8 +18,8 @@ npm i
 // 本地dev
 npm start
 
-// 执行公共模块打包，生成打包后的build目录
-npm run prod
+// 执行公共模块打包，生成打包后的build目录即生产环境代码
+npm run build
 ```
 
 ps：如有需要，将自己的公共模块和commonhtml目录中的模块进行替换后重新打包生成自己的生产环境包
