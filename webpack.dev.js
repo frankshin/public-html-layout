@@ -2,7 +2,7 @@ const path = require('path');
 const merge = require('webpack-merge')
 const baseConfig = require('./webpack.base.js')
 
-module.exports = (env, argv) => {
+module.exports = ((env, argv) => {
   const config = {
     mode: 'development',
     devServer: {
@@ -13,7 +13,7 @@ module.exports = (env, argv) => {
   }
 
   return merge(baseConfig, config)
-}
+})()
 
 
 
