@@ -4,7 +4,7 @@ const TransferWebpackPlugin = require('transfer-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { getTemplatesList } = require('./utils/index')
 
-const folder_list = getTemplatesList('templateSource')
+const folder_list = getTemplatesList('templates')
 const config = {
   entry: {
     'app': './app/index.js'
@@ -53,7 +53,7 @@ function generatehtml(pagesArray){
       title: '前端引入公共html模块方案实现（一）',
       hash: true,
       filename: pagename + '.html',
-      template: 'templateSource/' + pagename + '/' + pagename + '.js',
+      template: 'templates/' + pagename + '/' + pagename + '.js',
       inject: false
     })
     config.plugins.push(htmlgenerate);

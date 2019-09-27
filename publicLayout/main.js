@@ -3,9 +3,7 @@ const nav = require('./commonTemplates/nav.html');
 const topbar = require('./commonTemplates/topbar.html');
 const footer = require('./commonTemplates/footer.html');
 
-
-
-// 稍等这里改成路径map遍历获取，无需手动配置
+// 后续改成路径map遍历获取，无需手动配置
 const htmlconfig = {
     nav: nav,
     header: header,
