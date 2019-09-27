@@ -26,6 +26,8 @@ ps：如有需要，将自己的公共模块和commonhtml目录中的模块进�
 
 ## 目录结构
 
+```
 - publicLayout：公用模块整合中心
+  - commonTemplates 所要植入到页面中的各个公共小模块
 - templateSource 各页面模板资源文件，也是引擎所需要收集处理的资源文件
-
+```

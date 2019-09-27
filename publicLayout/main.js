@@ -1,7 +1,11 @@
-const header = require('../templateSource/commonhtml/header.html');
-const nav = require('../templateSource/commonhtml/nav.html');
-const topbar = require('../templateSource/commonhtml/topbar.html');
-const footer = require('../templateSource/commonhtml/footer.html');
+const header = require('./commonTemplates/header.html');
+const nav = require('./commonTemplates/nav.html');
+const topbar = require('./commonTemplates/topbar.html');
+const footer = require('./commonTemplates/footer.html');
+
+
+
+// 稍等这里改成路径map遍历获取，无需手动配置
 const htmlconfig = {
     nav: nav,
     header: header,

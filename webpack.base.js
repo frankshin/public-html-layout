@@ -32,7 +32,7 @@ const config = {
     ])
   ]
 }
-
+// 剔除需要被装载的静态页面颗粒
 folder_list.forEach(function(item, index, array){
   if(item === 'commonhtml'){
     folder_list.splice(index, 1);
@@ -41,6 +41,7 @@ folder_list.forEach(function(item, index, array){
 })
 
 function generatehtml(pagesArray){
+  console.log('pagesArray:', pagesArray)
   pagesArray.forEach(function(pagename,index,array){
     const htmlgenerate = new HtmlWebpackPlugin({
       title: '前端引入公共html模块方案实现（一）',
