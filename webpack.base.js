@@ -2,8 +2,9 @@ const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const TransferWebpackPlugin = require('transfer-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const folder_list = require('./getTemplatesList.js');
+const { getTemplatesList } = require('./utils/index')
 
+const folder_list = getTemplatesList('pages')
 const config = {
   entry: {
     'app': './app/index.js'
@@ -16,37 +17,53 @@ const config = {
   module: {
     rules: [
       {
+        test: /\.html$/,
+        use: [ {
+          loader: 'html-loader',
+          options: {
+            minimize: true
+          }
+        }],
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+          }
+        }
+      },
+      {
         test: /\.ejs$/,
         exclude: /(node_modules)/,
         loader: 'ejs-loader'
       },
-      {
-        test: /\.html$/,
-        loader: 'html-loader'
-      }
     ]
   },
   plugins: [
     new TransferWebpackPlugin([
-      {from: './css',to:'./css/'}
+      {from: './static',to:'./static/'}
     ])
   ]
 }
 
-folder_list.forEach(function(item, index, array){
-  if(item === 'commonhtml'){
-    folder_list.splice(index, 1);
-    generatehtml(folder_list);
-  }
-})
+if(folder_list.includes('.DS_Store')){
+  const index = folder_list.findIndex((item, value) => {
+    return item === '.DS_Store'
+  })
+  folder_list.splice(index, 1);
+}
+generatehtml(folder_list);
 
 function generatehtml(pagesArray){
+  console.log('pagesArray:', pagesArray)
   pagesArray.forEach(function(pagename,index,array){
     const htmlgenerate = new HtmlWebpackPlugin({
       title: '前端引入公共html模块方案实现（一）',
       hash: true,
       filename: pagename + '.html',
-      template: 'templateSource/' + pagename + '/' + pagename + '.js',
+      template: 'pages/' + pagename + '/' + pagename + '.js',
       inject: false
     })
     config.plugins.push(htmlgenerate);
