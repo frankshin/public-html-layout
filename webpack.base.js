@@ -2,8 +2,9 @@ const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const TransferWebpackPlugin = require('transfer-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const folder_list = require('./getTemplatesList.js');
+const { getTemplatesList } = require('./utils/index')
 
+const folder_list = getTemplatesList('templateSource')
 const config = {
   entry: {
     'app': './app/index.js'
