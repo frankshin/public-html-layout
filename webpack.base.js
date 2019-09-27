@@ -16,6 +16,15 @@ const config = {
   module: {
     rules: [
       {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+          }
+        }
+      },
+      {
         test: /\.ejs$/,
         exclude: /(node_modules)/,
         loader: 'ejs-loader'

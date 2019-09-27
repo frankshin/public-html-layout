@@ -11,6 +11,10 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "babel-loader": "^8.0.6",
     "better-opn": "^0.1.4",
     "chalk": "^2.4.2",
     "copy-webpack-plugin": "^5.0.4",
