@@ -9,7 +9,17 @@ package the public layout module for mutiple web pages with webpack
 ，则必须要讲公用的部分整合封装起来，同时考虑到web页的SEO问题，亦不能使用前端的异步动态加载公用页面模块，于是决定用webpack打包的方式生成
 生产环境下的代码，html页面采用js拼接生成
 
+## 环境
+
+```
+npm全局
+
+nodejs v8.x+
+```
+
 ## usage
+
+- 运行脚本
 
 ```js
 // 安装依赖
@@ -22,12 +32,16 @@ npm start
 npm run build
 ```
 
-ps：如有需要，将自己的公共模块和commonhtml目录中的模块进行替换后重新打包生成自己的生产环境包
+- 新增或修改公共模块
+
+
 
 ## 目录结构
 
 ```
 - publicLayout：公用模块整合中心
   - commonTemplates 所要植入到页面中的各个公共小模块
-- templateSource 各页面模板资源文件，也是引擎所需要收集处理的资源文件
+  - main.js 处理公共模块集方法
+- templates 各页面模板资源文件，也是引擎所需要收集处理的资源文件
+- utils 一些公共函数封装
 ```
