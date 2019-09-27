@@ -1,5 +1,5 @@
 {
-  "name": "fudaojun-pc",
+  "name": "public-html-layout",
   "version": "1.0.6",
   "description": "",
   "main": "index.js",
@@ -29,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://git.oschina.net/xudengwei/fudaojunweb-pc.git"
+    "url": "https://github.com/frankshin/public-html-layout"
   },
   "author": "",
   "license": "ISC"
