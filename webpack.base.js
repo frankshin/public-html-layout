@@ -34,7 +34,7 @@ const config = {
   },
   plugins: [
     new TransferWebpackPlugin([
-      {from: './css',to:'./css/'}
+      {from: './static',to:'./static/'}
     ])
   ]
 }
