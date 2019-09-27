@@ -17,6 +17,15 @@ const config = {
   module: {
     rules: [
       {
+        test: /\.html$/,
+        use: [ {
+          loader: 'html-loader',
+          options: {
+            minimize: true
+          }
+        }],
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
@@ -38,13 +47,14 @@ const config = {
     ])
   ]
 }
-// 剔除需要被装载的静态页面颗粒
-folder_list.forEach(function(item, index, array){
-  if(item === 'commonhtml'){
-    folder_list.splice(index, 1);
-    generatehtml(folder_list);
-  }
-})
+
+if(folder_list.includes('.DS_Store')){
+  const index = folder_list.findIndex((item, value) => {
+    return item === '.DS_Store'
+  })
+  folder_list.splice(index, 1);
+}
+generatehtml(folder_list);
 
 function generatehtml(pagesArray){
   console.log('pagesArray:', pagesArray)
