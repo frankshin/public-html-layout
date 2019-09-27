@@ -20,10 +20,6 @@ const config = {
         exclude: /(node_modules)/,
         loader: 'ejs-loader'
       },
-      {
-        test: /\.html$/,
-        loader: 'html-loader'
-      }
     ]
   },
   plugins: [
