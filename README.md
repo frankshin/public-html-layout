@@ -34,14 +34,19 @@ npm run build
 
 - 新增或修改公共模块
 
+> 新增公共模块引入流程：
 
+```
+1、将文件写入到 commonTemplates 目录
+2、在 utils/main.js 中配置公共模块的导出名称
+3、在pages中的模版页面中插入所要引入的公共模块位置
+4、运行脚本看效果
+```
 
 ## 目录结构
 
 ```
-- publicLayout：公用模块整合中心
-  - commonTemplates 所要植入到页面中的各个公共小模块
-  - main.js 处理公共模块集方法
-- templates 各页面模板资源文件，也是引擎所需要收集处理的资源文件
+- commonTemplates 需要引入到各个页面中的公共模块
+- pages 页面资源文件
 - utils 一些公共函数封装
 ```
