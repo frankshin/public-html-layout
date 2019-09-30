@@ -12,7 +12,7 @@ const config = {
   output: {
     path: path.join(__dirname, 'build'),
     filename: '[name].bundle.[hash].js',
-    publicPath: '/'
+    publicPath: path.join(__dirname, 'build')
   },
   module: {
     rules: [
@@ -44,6 +44,11 @@ const config = {
         use: [
           {
             loader: 'file-loader',
+            options: {
+              name: '[name].[contenthash].[ext]',
+              outputPath: 'static/images/',
+              publicPath: 'static/images/',
+            },
           },
         ],
       },
