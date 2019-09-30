@@ -39,6 +39,14 @@ const config = {
         exclude: /(node_modules)/,
         loader: 'ejs-loader'
       },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
     ]
   },
   plugins: [

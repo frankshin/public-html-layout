@@ -17,3 +17,8 @@ body{
   padding-left: 10px;
   padding-right: 10px;
 }
+
+.img-demo{
+	width: 50px;
+	height: auto;
+}
